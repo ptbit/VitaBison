@@ -1,4 +1,10 @@
 .hero {
+  position: relative;
+
+  @media screen and (min-width: 900px) {
+    padding-bottom: 160px;
+  }
+
   &__bg {
     height: 100%;
     background-image: url('./images/bg/image.jpg');
@@ -27,7 +33,7 @@
   &__content {
     position: relative;
     margin: 0 auto;
-    padding: 24px 16px;
+    padding: 24px 16px 0;
     color: $c-black;
     z-index: 3;
 

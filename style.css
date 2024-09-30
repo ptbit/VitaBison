@@ -77,12 +77,28 @@ body.no-scroll {
 }
 
 .bg__top {
-  height: 2222px;
   background-image: url("./images/bg/gradient2.png");
   background-size: cover;
   position: absolute;
+  top: 0;
+  bottom: 0;
   z-index: 0;
   width: 100%;
+}
+
+.bg__3 {
+  background-image: url("./images/bg/bg3-tel.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .bg__3 {
+    background-image: url("./images/bg/bg3.png");
+  }
 }
 
 .btn-rush {
@@ -105,6 +121,14 @@ body.no-scroll {
   cursor: pointer;
 }
 
+.hero {
+  position: relative;
+}
+@media screen and (min-width: 900px) {
+  .hero {
+    padding-bottom: 160px;
+  }
+}
 .hero__bg {
   height: 100%;
   background-image: url("./images/bg/image.jpg");
@@ -130,7 +154,7 @@ body.no-scroll {
 .hero__content {
   position: relative;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 24px 16px 0;
   color: #212121;
   z-index: 3;
 }
@@ -393,6 +417,8 @@ body.no-scroll {
 }
 .performance__wrapper {
   padding-inline: 16px;
+  z-index: 2;
+  position: relative;
 }
 @media screen and (min-width: 900px) {
   .performance__wrapper {
@@ -422,7 +448,10 @@ body.no-scroll {
   .performance__title {
     font-size: 125px;
     line-height: 160px;
-    margin-bottom: 68px;
+    margin-bottom: 0;
+    padding-top: 0;
+    position: relative;
+    top: -70px;
   }
 }
 .performance__container {
@@ -607,4 +636,134 @@ body.no-scroll {
   to {
     transform: translate3d(-100%, 0, 0);
   }
+}
+.info {
+  position: relative;
+}
+.info__bg {
+  height: 100%;
+  background-image: url("./images/bg/couple-tel.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .info__bg {
+    background-image: url("./images/bg/couple-desc.png");
+  }
+}
+.info__wrapper {
+  padding: 40px 16px;
+  position: relative;
+  z-index: 3;
+}
+@media screen and (min-width: 900px) {
+  .info__wrapper {
+    padding: 56px 80px;
+  }
+}
+.info__made {
+  margin-bottom: 24px;
+}
+.info__made .made__img {
+  width: 172px;
+  height: 172px;
+  margin-bottom: 24px;
+}
+.info__made .made__tm {
+  margin-bottom: 4px;
+  color: var(--bordo, #8b1c00);
+  /* H4 */
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 120% */
+}
+.info__made .made__text {
+  color: var(--black, #212121);
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+.info__proposal {
+  margin-bottom: 28px;
+  position: relative;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 8px;
+}
+.info .proposal__text {
+  color: var(--black, #212121);
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.info .proposal__title {
+  color: var(--bordo, #8b1c00);
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  line-height: 48px;
+}
+.info .proposal__description {
+  color: var(--black, #212121);
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  line-height: 40px;
+}
+.info .proposal__img {
+  height: 212px;
+  position: absolute;
+}
+.info .proposal__img--1 {
+  top: 0;
+  right: 42px;
+}
+.info .proposal__img--2 {
+  bottom: 0;
+  right: 0;
+}
+.info .inf__more-info {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+.info .more__title {
+  color: var(--bordo, #8b1c00);
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  line-height: 48px;
+}
+.info .more__description {
+  margin-bottom: 20px;
+  color: var(--black, #212121);
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  line-height: 40px;
+}
+.info .more__text {
+  color: var(--white, #fffcf9);
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  line-height: 24px;
+}
+.info .medical__text {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  background: var(--bordo, #8b1c00);
+  text-align: center;
+}
+.info .medical__info {
+  color: var(--white, #fffcf9);
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
 }/*# sourceMappingURL=style.css.map */

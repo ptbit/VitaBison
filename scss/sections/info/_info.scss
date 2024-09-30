@@ -1,0 +1,146 @@
+.info {
+  position: relative;
+
+  &__bg {
+    height: 100%;
+    background-image: url('./images/bg/couple-tel.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    // background-position: center;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+
+    @media screen and (min-width: 900px) {
+      background-image: url('./images/bg/couple-desc.png');
+    }
+  }
+
+  &__wrapper {
+    padding: 40px 16px;
+    position: relative;
+    z-index: 3;
+
+    @media screen and (min-width: 900px) {
+      padding: 56px 80px;
+    }
+  }
+
+  &__made {
+    margin-bottom: 24px;
+
+    .made__img {
+      width: 172px;
+      height: 172px;
+      margin-bottom: 24px;
+    }
+    .made__tm {
+      margin-bottom: 4px;
+      color: var(--bordo, #8b1c00);
+
+      /* H4 */
+      font-family: 'Bebas Neue';
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 48px; /* 120% */
+    }
+    .made__text {
+      color: var(--black, #212121);
+      font-family: 'Roboto Condensed';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 140% */
+    }
+  }
+
+  &__proposal {
+    margin-bottom: 28px;
+    position: relative;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 8px;
+  }
+
+  .proposal__text {
+    color: var(--black, #212121);
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .proposal__title {
+    color: var(--bordo, #8b1c00);
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .proposal__description {
+    color: var(--black, #212121);
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .proposal__img {
+    height: 212px;
+    position: absolute;
+  }
+
+  .proposal__img--1 {
+    top: 0;
+    right: 42px;
+  }
+
+  .proposal__img--2 {
+    bottom: 0;
+    right: 0;
+  }
+
+  .inf__more-info {
+    margin-top: 48px;
+    margin-bottom: 16px;
+  }
+
+  .more__title {
+    color: var(--bordo, #8b1c00);
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .more__description {
+    margin-bottom: 20px;
+    color: var(--black, #212121);
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .more__text {
+    color: var(--white, #fffcf9);
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .info__medical {
+  }
+  .medical__text {
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border-radius: 3px;
+    background: var(--bordo, #8b1c00);
+    text-align: center;
+  }
+  .medical__info {
+    color: var(--white, #fffcf9);
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+}

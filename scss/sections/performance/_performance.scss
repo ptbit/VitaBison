@@ -3,6 +3,8 @@
 
   &__wrapper {
     padding-inline: 16px;
+    z-index: 2;
+    position: relative;
 
     @media screen and (min-width: 900px) {
       padding-inline: 80px;
@@ -32,7 +34,10 @@
     @media screen and (min-width: 900px) {
       font-size: 125px;
       line-height: 160px;
-      margin-bottom: 68px;
+      margin-bottom: 0;
+      padding-top: 0;
+      position: relative;
+      top: -70px;
     }
   }
 

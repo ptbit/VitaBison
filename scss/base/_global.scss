@@ -34,12 +34,28 @@ body {
 }
 
 .bg__top {
-  height: 2222px;
+  // height: 3022px;
   background-image: url('./images/bg/gradient2.png');
   background-size: cover;
   position: absolute;
+  top: 0;
+  bottom: 0;
   z-index: 0;
   width: 100%;
+}
+
+.bg__3 {
+  background-image: url('./images/bg/bg3-tel.png');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+
+  @media screen and (min-width: 900px) {
+    background-image: url('./images/bg/bg3.png');
+  }
 }
 
 .btn-rush {
