@@ -1,7 +1,7 @@
 .hero {
   &__bg {
     height: 100%;
-    background-image: url('../../../images/bg/image.jpg');
+    background-image: url('./images/bg/image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -147,8 +147,7 @@
     gap: 10px;
 
     @media screen and (min-width: 900px) {
-      // padding: 88px 0 64px 0;
-      margin-left: -20px;
+      position: relative;
     }
 
     &--imgmob {
@@ -170,6 +169,10 @@
         height: 560px;
         object-fit: cover;
         margin-left: -50px;
+        position: absolute;
+        right: -350px;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }
@@ -220,8 +223,6 @@
     }
   }
 
-  &__item--info {
-  }
   &__item--title {
     margin-bottom: 8px;
     color: var(--white, #fffcf9);
@@ -310,12 +311,6 @@
       font-weight: 400;
       line-height: 96px; /* 120% */
     }
-
-    &__texts-list {
-      .elipse {
-      }
-    }
-
     &__texts-list--item {
       color: var(--black, #212121);
       font-family: 'Roboto Condensed';
