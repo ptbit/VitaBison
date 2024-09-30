@@ -1,0 +1,328 @@
+.hero {
+  &__bg {
+    height: 100%;
+    background-image: url('../../../images/bg/image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+
+  &__message {
+    padding: 16px;
+    position: relative;
+    background-color: $c-black;
+    z-index: 3;
+  }
+
+  &__message-text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__content {
+    position: relative;
+    margin: 0 auto;
+    padding: 24px 16px;
+    color: $c-black;
+    z-index: 3;
+
+    @media screen and (min-width: 900px) {
+      padding: 24px 80px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+
+  &__logo {
+    height: 44px;
+  }
+
+  &__perks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__perk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__perk-title {
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    line-height: 40px;
+    background: var(
+      --linear-brown,
+      linear-gradient(180deg, #212020 0%, #755326 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__perk-description {
+    color: $c-black;
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  //
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 900px) {
+      flex-direction: row;
+    }
+  }
+  //
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  &__texts-small {
+    color: var(--black, #212121);
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  &__texts-big {
+    color: $c-bordo;
+    font-family: 'Bebas Neue';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 100% */
+  }
+
+  &__texts-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .elipse {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+      border-radius: 9px;
+      background: $c-bordo;
+    }
+  }
+
+  &__texts-list--item {
+    flex: 1;
+    color: var(--black, #212121);
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 10px;
+
+    @media screen and (min-width: 900px) {
+      // padding: 88px 0 64px 0;
+      margin-left: -20px;
+    }
+
+    &--imgmob {
+      width: 150px;
+      height: 370px;
+      object-fit: cover;
+
+      @media screen and (min-width: 900px) {
+        display: none;
+      }
+    }
+
+    &--imgdesc {
+      display: none;
+
+      @media screen and (min-width: 900px) {
+        display: block;
+        width: 352px;
+        height: 560px;
+        object-fit: cover;
+        margin-left: -50px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: $c-white;
+
+    @media screen and (min-width: 900px) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 10px;
+
+    @media screen and (min-width: 900px) {
+      gap: 20px;
+      background-color: #212121;
+      position: relative;
+      padding: 24px 0 24px 24px;
+      padding: 24px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: -120px;
+        top: 0;
+        height: 100%;
+        border-right: 120px solid transparent;
+        border-bottom: 120px solid $c-black;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__item--img {
+    width: 36px;
+    height: 36px;
+    align-self: center;
+
+    @media screen and (min-width: 900px) {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  &__item--info {
+  }
+  &__item--title {
+    margin-bottom: 8px;
+    color: var(--white, #fffcf9);
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+
+    @media screen and (min-width: 900px) {
+      font-size: 28px;
+      line-height: 36px;
+      font-weight: 400;
+      text-wrap: nowrap;
+    }
+  }
+  &__item--description {
+    color: var(--white, #fffcf9);
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    @media screen and (min-width: 900px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    &__content {
+      max-width: 1440px;
+      padding-top: 40px;
+    }
+
+    &__top {
+      justify-content: space-between;
+      flex-direction: row;
+      margin-bottom: 80px;
+    }
+
+    &__perks {
+      width: fit-content;
+      gap: 40px;
+    }
+    &__perk-title {
+      font-size: 64px;
+      line-height: 80px;
+    }
+    &__perk-description {
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    &__message-text {
+      font-size: 20px;
+      line-height: 32px;
+    }
+    //
+    &__texts {
+      max-width: 496px;
+      gap: 16px;
+    }
+
+    &__texts-small {
+      color: var(--black, #212121);
+
+      /* Т1 */
+      font-family: 'Roboto Condensed';
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 142.857% */
+    }
+
+    &__texts-big {
+      color: var(--bordo, #8b1c00);
+
+      /* H2 */
+      font-family: 'Bebas Neue';
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 96px; /* 120% */
+    }
+
+    &__texts-list {
+      .elipse {
+      }
+    }
+
+    &__texts-list--item {
+      color: var(--black, #212121);
+      font-family: 'Roboto Condensed';
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 142.857% */
+    }
+  }
+}

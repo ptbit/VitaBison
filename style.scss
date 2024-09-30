@@ -1,0 +1,16 @@
+// abstracts
+@import './scss/abstract/vars';
+
+// base
+@import './scss/base/reset';
+@import './scss/base/fonts';
+@import './scss/base/global';
+// @import './scss/base/animations';
+// components
+@import './scss/layouts/header';
+@import './scss/layouts/footer';
+
+// sections
+@import './scss/sections/hero/hero';
+@import './scss/sections/performance/performance';
+@import './scss/sections/string/string';
