@@ -183,6 +183,7 @@ body.no-scroll {
 @media screen and (min-width: 900px) {
   .hero__info {
     flex-direction: row;
+    position: relative;
   }
 }
 .hero__texts {
@@ -232,11 +233,6 @@ body.no-scroll {
   display: flex;
   gap: 10px;
 }
-@media screen and (min-width: 900px) {
-  .hero__bottom {
-    position: relative;
-  }
-}
 .hero__bottom--imgmob {
   width: 150px;
   height: 370px;
@@ -253,12 +249,8 @@ body.no-scroll {
 @media screen and (min-width: 900px) {
   .hero__bottom--imgdesc {
     display: block;
-    width: 352px;
-    height: 560px;
-    object-fit: cover;
-    margin-left: -50px;
     position: absolute;
-    right: -350px;
+    right: -70px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -322,7 +314,6 @@ body.no-scroll {
     font-size: 28px;
     line-height: 36px;
     font-weight: 400;
-    text-wrap: nowrap;
   }
 }
 .hero__item--description {
