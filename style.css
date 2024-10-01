@@ -444,6 +444,8 @@ body.no-scroll {
 @media screen and (min-width: 900px) {
   .performance__wrapper {
     padding-inline: 80px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 .performance__bg {
@@ -636,6 +638,12 @@ body.no-scroll {
 .string__wrapper {
   display: flex;
 }
+@media screen and (min-width: 900px) {
+  .string__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
 .string__item {
   animation: string 5s linear infinite;
 }
@@ -666,6 +674,7 @@ body.no-scroll {
   background-image: url("./images/bg/couple-tel.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -686,6 +695,8 @@ body.no-scroll {
     display: flex;
     gap: 50px;
     justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 .info__made {
@@ -896,6 +907,8 @@ body.no-scroll {
 @media screen and (min-width: 900px) {
   .order__wrapper {
     padding: 0 80px 96px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 .order__container {
@@ -956,6 +969,13 @@ body.no-scroll {
   z-index: 3;
   padding: 0 16px 40px;
 }
+@media screen and (min-width: 900px) {
+  .how__wrapper {
+    padding: 0 80px 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
 .how__wrapper--bot {
   padding-bottom: 41px;
 }
@@ -994,11 +1014,6 @@ body.no-scroll {
     max-width: 840px;
     text-align: center;
     margin: 0 auto;
-  }
-}
-@media screen and (min-width: 900px) {
-  .how__wrapper {
-    padding: 0 80px 40px;
   }
 }
 .how__wrapper--nolimits {

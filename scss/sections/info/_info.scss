@@ -6,7 +6,7 @@
     background-image: url('./images/bg/couple-tel.png');
     background-repeat: no-repeat;
     background-size: contain;
-    // background-position: center;
+    background-position: center;
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -26,6 +26,8 @@
       display: flex;
       gap: 50px;
       justify-content: space-between;
+      max-width: 1440px;
+      margin: 0 auto;
     }
   }
 
