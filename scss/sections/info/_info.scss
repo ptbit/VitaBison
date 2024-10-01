@@ -23,6 +23,9 @@
 
     @media screen and (min-width: 900px) {
       padding: 56px 80px;
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
     }
   }
 
@@ -52,17 +55,20 @@
       font-style: normal;
       font-weight: 400;
       line-height: 28px; /* 140% */
+      @media screen and (min-width: 900px) {
+        max-width: 310px;
+      }
     }
   }
 
   &__proposal {
     margin-bottom: 28px;
     position: relative;
-    min-height: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 8px;
+
+    @media screen and (min-width: 900px) {
+      display: flex;
+      gap: 100px;
+    }
   }
 
   .proposal__text {
@@ -78,6 +84,12 @@
     font-family: 'Bebas Neue';
     font-size: 40px;
     line-height: 48px;
+    text-wrap: wrap;
+    width: min-content;
+
+    @media screen and (min-width: 900px) {
+      text-wrap: nowrap;
+    }
   }
 
   .proposal__description {
@@ -86,12 +98,39 @@
     font-size: 32px;
     line-height: 40px;
   }
+  .proposal__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 8px;
+    min-height: 240px;
+  }
 
   .proposal__img {
     height: 212px;
     position: absolute;
-  }
 
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+
+    &--desc {
+      display: none;
+      width: 214px;
+      height: 366px;
+
+      @media screen and (min-width: 900px) {
+        display: block;
+      }
+    }
+  }
+  .proposal__img--desc1 {
+    scale: 0.9;
+  }
+  .proposal__img--desc2 {
+    position: absolute;
+    left: 90px;
+  }
   .proposal__img--1 {
     top: 0;
     right: 42px;
@@ -103,8 +142,11 @@
   }
 
   .inf__more-info {
-    margin-top: 48px;
+    margin-top: 24px;
     margin-bottom: 16px;
+    @media screen and (min-width: 900px) {
+      margin-top: 131px;
+    }
   }
 
   .more__title {
@@ -112,35 +154,75 @@
     font-family: 'Bebas Neue';
     font-size: 40px;
     line-height: 48px;
+
+    @media screen and (min-width: 900px) {
+      font-size: 80px;
+      line-height: 96px;
+    }
   }
+
   .more__description {
     margin-bottom: 20px;
     color: var(--black, #212121);
     font-family: 'Bebas Neue';
     font-size: 32px;
     line-height: 40px;
+
+    @media screen and (min-width: 900px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
   }
   .more__text {
     color: var(--white, #fffcf9);
     font-family: 'Roboto Condensed';
     font-size: 16px;
     line-height: 24px;
+
+    @media screen and (min-width: 900px) {
+      color: var(--black, #212121);
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 
-  .info__medical {
+  .more__right {
+    @media screen and (min-width: 900px) {
+      max-width: 528px;
+    }
   }
+
   .medical__text {
     padding: 8px 16px;
     margin-bottom: 16px;
     border-radius: 3px;
     background: var(--bordo, #8b1c00);
     text-align: center;
+    @media screen and (min-width: 900px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   .medical__info {
     color: var(--white, #fffcf9);
     font-family: 'Roboto Condensed';
     font-size: 16px;
     font-weight: 700;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+
+    @media screen and (min-width: 900px) {
+      color: var(--black, #212121);
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__string {
+    width: calc(100% + 32px);
+    left: -16px;
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
   }
 }
