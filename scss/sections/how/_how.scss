@@ -6,6 +6,13 @@
     z-index: 3;
     padding: 0 16px 40px;
 
+    &--bot {
+      padding-bottom: 41px;
+      @media screen and (min-width: 900px) {
+        padding-bottom: 96px !important;
+      }
+    }
+
     .how__title {
       text-transform: uppercase;
       margin-bottom: 12px;

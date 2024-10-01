@@ -955,6 +955,14 @@ body.no-scroll {
   z-index: 3;
   padding: 0 16px 40px;
 }
+.how__wrapper--bot {
+  padding-bottom: 41px;
+}
+@media screen and (min-width: 900px) {
+  .how__wrapper--bot {
+    padding-bottom: 96px !important;
+  }
+}
 .how__wrapper .how__title {
   text-transform: uppercase;
   margin-bottom: 12px;
