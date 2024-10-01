@@ -1,0 +1,7 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cross">
+<rect width="20" height="20" rx="10" fill="#FF2F00"/>
+<path id="Vector 3" d="M6 6L14 14" stroke="#FFFCF9" stroke-linecap="round"/>
+<path id="Vector 4" d="M6 14L14 6" stroke="#FFFCF9" stroke-linecap="round"/>
+</g>
+</svg>
