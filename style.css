@@ -1477,4 +1477,76 @@ body.no-scroll {
 }
 .ingredients .swiper-prev {
   transform: rotate(180deg);
+}
+.protected {
+  position: relative;
+  color: var(--black, #212121);
+}
+.protected__wrapper {
+  position: relative;
+  z-index: 3;
+  padding: 40px 16px;
+}
+@media screen and (min-width: 900px) {
+  .protected__wrapper {
+    padding: 96px 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .protected__top {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+}
+.protected__title {
+  margin-bottom: 8px;
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  line-height: 48px;
+}
+@media screen and (min-width: 900px) {
+  .protected__title {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 80px;
+    line-height: 96px;
+  }
+}
+.protected__sub-title {
+  margin-bottom: 12px;
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  line-height: 40px;
+}
+@media screen and (min-width: 900px) {
+  .protected__sub-title {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 38px;
+  }
+}
+.protected__text {
+  line-height: 24px;
+}
+@media screen and (min-width: 900px) {
+  .protected__text {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.protected__img-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+.protected__message {
+  margin-top: 12px;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  line-height: 32px;
 }/*# sourceMappingURL=style.css.map */
