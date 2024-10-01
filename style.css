@@ -910,7 +910,7 @@ body.no-scroll {
 }
 @media screen and (min-width: 900px) {
   .order__wrapper {
-    padding: 0 80px 96px;
+    padding: 96px 80px;
     max-width: 1440px;
     margin: 0 auto;
   }
