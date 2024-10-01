@@ -17,9 +17,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./scripts/ingredients-slider.js" defer></script>
   </head>
   <body>
     <main class="main">
+      <!-- START 
+      
       <section class="hero">
         <div class="bg__top"></div>
         <div class="hero__bg"></div>
@@ -509,6 +520,8 @@
         </div>
       </section>
 
+
+
       <section class="junk">
         <div class="junk__wrapper">
           <div class="junk__header">
@@ -611,6 +624,151 @@
           </div>
 
           <button class="btn-rush junk__btn">RUSH MY ORDER</button>
+        </div>
+      </section>
+    END -->
+      <section class="table">
+        <div class="bg__3"></div>
+        <div class="table__bg"></div>
+        <div class="table__wrapper">
+          <h4 class="table__title">
+            Here’s How <span>VITABISION</span> Formula Stacks Up Against The
+            Competition
+          </h4>
+          <img class="table__img" src="./images/table.png" alt="" />
+
+          <button class="btn-rush table__btn">RUSH MY ORDER</button>
+        </div>
+      </section>
+
+      <section class="ingredients">
+        <div class="ingredients__wrapper">
+          <h4 class="ingredients__title">Powerful Ingredients</h4>
+          <p class="ingredients__sub-title">For Bigger Results</p>
+
+          <div class="ingredients__top">
+            <div class="ingredients__card">
+              <img src="./images/ingredients/1.png" alt="" class="card__img" />
+              <p class="card__title">Tongkat Ali Extract</p>
+              <p class="card__text">
+                Works synergistically with the other pro-sexual nutrients to
+                boost blood flow to the penile chambers for improved erections.
+                It also helps expand the chambers to increase blood holding
+                capacity and in-turn staying power.
+              </p>
+            </div>
+
+            <div class="ingredients__card ingredients__card--last">
+              <img src="./images/ingredients/2.png" alt="" class="card__img" />
+              <p class="card__title">maca root</p>
+              <p class="card__text">
+                Maca root is a Peruvian plant known for its properties to
+                increase energy, stamina, improve hormonal balance, and support
+                sexual health and overall well-being.
+              </p>
+            </div>
+
+            <img
+              class="ingredients__bank"
+              src="./images/ingredients/3.png"
+              alt=""
+            />
+          </div>
+
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper ingredients__slider">
+              <!-- Slides -->
+
+              <div class="swiper-slide">
+                <div class="ingredients__slide">
+                  <img
+                    src="./images/ingredients/slide1.png"
+                    alt=""
+                    class="item__logo"
+                  />
+                  <p class="item__title">Nettle Extract</p>
+                  <p class="item__text">
+                    An aphrodisiac, it helps boost male sexual drive and libido.
+                    It also supports healthy testosterone levels.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="ingredients__slide">
+                  <img
+                    src="./images/ingredients/slide2.png"
+                    alt=""
+                    class="item__logo"
+                  />
+                  <p class="item__title">ginseng</p>
+                  <p class="item__text">
+                    Ginseng is also known for its properties to support sexual
+                    health, improving libido, sexual endurance.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="ingredients__slide">
+                  <img
+                    src="./images/ingredients/slide3.png"
+                    alt=""
+                    class="item__logo"
+                  />
+                  <p class="item__title">Saw Palmetto Extract</p>
+                  <p class="item__text">
+                    Called the "Viagra of Asia", this herbal extract replenishes
+                    sexual energy stores for improved strength and stamina.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="ingredients__slide">
+                  <img
+                    src="./images/ingredients/slide4.png"
+                    alt=""
+                    class="item__logo"
+                  />
+                  <p class="item__title">Calcium carbonate</p>
+                  <p class="item__text">
+                    Calcium carbonate supports sexual health by contributing to
+                    the normal functioning of muscles, nerves and blood
+                    circulation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="ingredients__slide">
+                  <img
+                    src="./images/ingredients/slide5.png"
+                    alt=""
+                    class="item__logo"
+                  />
+                  <p class="item__title">Orchic Substance</p>
+                  <p class="item__text">
+                    Positively influences mood patterns to reduce stress and
+                    promote relaxation, enabling men to perform at their peak.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+                 <div class="slider__buttons">
+              <div class="swiper-btn swiper-prev">
+                <img src="./images/svg/arrow.png" alt="" />
+              </div>
+              <div class="swiper-btn swiper-next">
+                <img src="./images/svg/arrow.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+
+          <button class="btn-rush table__btn">RUSH MY ORDER</button>
         </div>
       </section>
     </main>

@@ -1,0 +1,63 @@
+.table {
+  position: relative;
+
+  &__bg {
+    height: 100%;
+    background-image: url('./images/bg/table-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 3;
+    padding: 40px 16px;
+
+    @media screen and (min-width: 900px) {
+      padding: 96px 80px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    color: var(--black, #212121);
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    line-height: 48px;
+
+    @media screen and (min-width: 900px) {
+      max-width: 1184px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 64px;
+      line-height: 80px;
+    }
+
+    span {
+      color: var(--bordo, #8b1c00);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 900px) {
+      margin-bottom: 54px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    @media screen and (min-width: 900px) {
+      width: 344px;
+      margin: 0 auto;
+    }
+  }
+}
