@@ -1,0 +1,59 @@
+.order {
+  position: relative;
+
+  &__wrapper {
+    position: relative;
+    z-index: 3;
+    padding: 24px 16px 40px;
+
+    @media screen and (min-width: 900px) {
+      padding: 0 80px 96px;
+    }
+  }
+  &__container {
+    padding: 16px;
+    border-radius: 11px;
+    border: 1px solid var(--black, #212121);
+    background: var(--white, #fffcf9);
+
+    @media screen and (min-width: 900px) {
+      padding-inline: 0;
+      padding-block: 24px;
+    }
+  }
+  &__title {
+    margin-bottom: 16px;
+    color: var(--bordo, #8b1c00);
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    line-height: 48px;
+
+    @media screen and (min-width: 900px) {
+      font-size: 128px;
+      line-height: 140px;
+      text-align: center;
+    }
+  }
+  &__text {
+    margin-bottom: 28px;
+    color: var(--black, #212121);
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    line-height: 40px;
+
+    @media screen and (min-width: 900px) {
+      text-align: center;
+      font-size: 64px;
+      line-height: 80px;
+    }
+  }
+
+  .right__btn {
+    width: 100%;
+
+    @media screen and (min-width: 900px) {
+      width: 344px;
+      margin: 0 auto;
+    }
+  }
+}

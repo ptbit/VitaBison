@@ -251,6 +251,26 @@
       line-height: 28px;
     }
   }
+
+  &__btn {
+    &--tel {
+      display: block;
+      margin-top: 20px;
+      width: 100%;
+
+      @media screen and (min-width: 900px) {
+        display: none;
+      }
+    }
+    &--desc {
+      display: none;
+
+      @media screen and (min-width: 900px) {
+        display: block;
+        margin-top: auto;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -287,6 +307,7 @@
     &__texts {
       max-width: 496px;
       gap: 16px;
+      margin-bottom: 0;
     }
 
     &__texts-small {

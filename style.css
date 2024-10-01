@@ -354,6 +354,25 @@ body.no-scroll {
     line-height: 28px;
   }
 }
+.hero__btn--tel {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .hero__btn--tel {
+    display: none;
+  }
+}
+.hero__btn--desc {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .hero__btn--desc {
+    display: block;
+    margin-top: auto;
+  }
+}
 
 @media screen and (min-width: 900px) {
   .hero__content {
@@ -384,6 +403,7 @@ body.no-scroll {
   .hero__texts {
     max-width: 496px;
     gap: 16px;
+    margin-bottom: 0;
   }
   .hero__texts-small {
     color: var(--black, #212121);
@@ -862,4 +882,247 @@ body.no-scroll {
   .info__string {
     display: none;
   }
+}
+
+.order {
+  position: relative;
+}
+.order__wrapper {
+  position: relative;
+  z-index: 3;
+  padding: 24px 16px 40px;
+}
+@media screen and (min-width: 900px) {
+  .order__wrapper {
+    padding: 0 80px 96px;
+  }
+}
+.order__container {
+  padding: 16px;
+  border-radius: 11px;
+  border: 1px solid var(--black, #212121);
+  background: var(--white, #fffcf9);
+}
+@media screen and (min-width: 900px) {
+  .order__container {
+    padding-inline: 0;
+    padding-block: 24px;
+  }
+}
+.order__title {
+  margin-bottom: 16px;
+  color: var(--bordo, #8b1c00);
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  line-height: 48px;
+}
+@media screen and (min-width: 900px) {
+  .order__title {
+    font-size: 128px;
+    line-height: 140px;
+    text-align: center;
+  }
+}
+.order__text {
+  margin-bottom: 28px;
+  color: var(--black, #212121);
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  line-height: 40px;
+}
+@media screen and (min-width: 900px) {
+  .order__text {
+    text-align: center;
+    font-size: 64px;
+    line-height: 80px;
+  }
+}
+.order .right__btn {
+  width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .order .right__btn {
+    width: 344px;
+    margin: 0 auto;
+  }
+}
+
+.how {
+  position: relative;
+}
+.how__wrapper {
+  position: relative;
+  z-index: 3;
+  padding: 0 16px 40px;
+}
+.how__wrapper .how__title {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: var(--black, #212121);
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  line-height: 48px;
+}
+@media screen and (min-width: 900px) {
+  .how__wrapper .how__title {
+    text-align: center;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 17px;
+  }
+}
+.how__wrapper .how__title span {
+  color: var(--bordo, #8b1c00);
+}
+.how__wrapper .how__text {
+  color: var(--black, #212121);
+  line-height: 24px;
+}
+@media screen and (min-width: 900px) {
+  .how__wrapper .how__text {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 840px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .how__wrapper {
+    padding: 0 80px 40px;
+  }
+}
+.how__wrapper--nolimits {
+  border-radius: 10px;
+  background: var(--black, #212121);
+  padding-block: 32px;
+}
+@media screen and (min-width: 900px) {
+  .how__wrapper--nolimits {
+    max-width: 1280px;
+    margin: 0 auto;
+    border-radius: 11px;
+    padding: 56px;
+  }
+}
+.how .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 900px) {
+  .how .actions {
+    gap: 32px;
+  }
+}
+.how .action {
+  color: var(--white, #fffcf9);
+}
+@media screen and (min-width: 900px) {
+  .how .action {
+    display: flex;
+    gap: 32px;
+  }
+}
+.how .action__img {
+  margin-bottom: 16px;
+  border-radius: 24px;
+}
+@media screen and (min-width: 900px) {
+  .how .action__img {
+    margin-bottom: 0;
+  }
+}
+.how .action__img--mob {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .how .action__img--mob {
+    display: none;
+  }
+}
+.how .action__img--desc {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .how .action__img--desc {
+    display: block;
+  }
+}
+.how .action__header {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.how .action__title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 32px;
+}
+.how .action__text1 {
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+.how .action__text2 {
+  font-weight: 700;
+  line-height: 24px;
+}
+.how__btn {
+  width: 100%;
+  margin-top: 32px;
+}
+@media screen and (min-width: 900px) {
+  .how__btn {
+    width: 344px;
+    margin: 40px auto 0;
+  }
+}
+.how .steps {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 24px;
+}
+@media screen and (min-width: 900px) {
+  .how .steps {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 900px) {
+  .how .step {
+    max-width: 400px;
+  }
+}
+.how .step__top {
+  border-radius: 11px;
+  overflow: hidden;
+  background-color: #fffcf9;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 900px) {
+  .how .step__img {
+    width: 100%;
+  }
+}
+.how .step__name {
+  padding: 16px;
+  color: var(--black, #212121);
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 30px;
+}
+@media screen and (min-width: 900px) {
+  .how .step__name {
+    padding: 12px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.how .step__bottom {
+  color: var(--black, #212121);
+  line-height: 24px;
 }/*# sourceMappingURL=style.css.map */
