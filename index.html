@@ -27,11 +27,13 @@
     ></script>
     <script src="./scripts/ingredients-slider.js" defer></script>
     <script src="./scripts/reviews-slider.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/modals.js" defer></script>
+    <script src="./scripts/rush-modal.js" defer></script>
   </head>
   <body>
     <main class="main">
-      <!-- START 
-         END -->
+      <!-- START     END -->
       <section class="hero">
         <div class="bg__top"></div>
         <div class="hero__bg"></div>
@@ -804,7 +806,6 @@
             beat sexual dysfunction and enjoy a fuller and satisfied sex life.
           </p>
 
-          <!-- SLIDER -->
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -917,10 +918,8 @@
                 </div>
               </div>
             </div>
-            <!-- If we need pagination -->
             <div class="swiper-pagination slider__pagination"></div>
 
-            <!-- If we need navigation buttons -->
             <div class="slider__buttons">
               <div class="swiper-btn swiper-review-prev">
                 <img src="./images/svg/arrow-black.png" alt="" />
@@ -929,9 +928,6 @@
                 <img src="./images/svg/arrow-black.png" alt="" />
               </div>
             </div>
-
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
 
           <button class="btn-rush table__btn">RUSH MY ORDER</button>
@@ -955,11 +951,11 @@
           remunerated.
         </p>
         <ul class="footer__links">
-          <li class="footer__link">Terms and Conditions</li>
+          <li class="footer__link" id="terms">Terms and Conditions</li>
           |
-          <li class="footer__link">Privacy Policy</li>
+          <li class="footer__link" id="policy">Privacy Policy</li>
           |
-          <li class="footer__link">Contact Us</li>
+          <li class="footer__link" id="contactUs">Contact Us</li>
         </ul>
         <p class="footer__rights">
           © 2024 Health Charm ME. All Rights Reserved.

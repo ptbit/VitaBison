@@ -1,0 +1,62 @@
+.footer__modal {
+  text-align: left;
+
+  h4 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+  }
+}
+
+.swal2-close {
+  // position: absolute;
+  // top: 20px;
+  // right: 20px;
+
+  &:focus-visible {
+    box-shadow: none;
+  }
+}
+
+.swal2-title {
+  color: var(--white, #fffcf9);
+  text-align: center;
+  font-family: 'Roboto Condensed';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 142.857% */
+}
+
+.footer__modal {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    background: var(--white, #fffcf9);
+
+    color: var(--gray, #515351);
+
+    /* T5 regular */
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  .btn-rush {
+    width: 100%;
+  }
+}
