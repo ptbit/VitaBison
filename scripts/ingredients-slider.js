@@ -1,10 +1,11 @@
-console.log('slider');
-const swiper = new Swiper('.swiper', {
+const ingredientsSwiper = new Swiper('.swiper', {
   speed: 400,
-  // slidesPerView: 1.1,
   slidesPerView: 1,
   loop: true,
   spaceBetween: 10,
+  initialSlide: 0,
+  grabCursor: true,
+  centeredSlides: false,
 
   // Navigation arrows
   navigation: {
@@ -12,20 +13,9 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-prev',
   },
 
-  initialSlide: 0,
-
-  // slideActiveClass: 'swiper-main-slide',
-  // slideNextClass: 'swiper-next-slide',
-  // slidePrevClass: 'swiper-prev-slide',
-
-  grabCursor: true,
-  centeredSlides: false,
   breakpoints: {
     900: {
-      // autoHeight: true,
-      // loop: true,
       slidesPerView: 5,
-      // centeredSlides: false,
     },
   },
 });
