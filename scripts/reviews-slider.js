@@ -24,7 +24,7 @@ const reviewSwiper = new Swiper('.swiper', {
         type: 'bullets',
         clickable: true,
       },
-      spaceBetween: 16,
+      spaceBetween: 20,
       slidesPerView: 2,
       loop: true,
     },

@@ -1,0 +1,38 @@
+.footer {
+  background: var(--black, #212121);
+  color: var(--white, #fffcf9);
+  text-align: center;
+  font-family: 'Roboto Condensed';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+
+  &__wrapper {
+    padding: 32px 16px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__links {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  &__link {
+    transition: all 0.3s linear;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+
+  &__rights {
+  }
+}
