@@ -1,4 +1,5 @@
-const ingredientsSwiper = new Swiper('.swiper', {
+console.log('ingredientsSwiper');
+const ingredientsSwiper = new Swiper('.swiper-ing', {
   speed: 400,
   slidesPerView: 1,
   loop: true,

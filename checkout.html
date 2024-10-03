@@ -3,17 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>checkout</title>
+    <title>VitaBison Checkout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <!-- <script src="./scripts/ingredients-slider.js" defer></script> -->
+    <!-- <script src="./scripts/reviews-slider.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="./scripts/modals.js" defer></script> -->
   </head>
   <body>
-    checkout
+    <main class="main">
+      <section class="hero">
+        <div class="bg__top"></div>
+        <div class="hero__bg"></div>
+        <div class="hero__message">
+          <p class="hero__message-text">
+            WARNING: Due to extremely high media demand, there is a limited
+            supply of VitaBison™ in stock as of September 20, 2024 Hurry!! 00:00
+          </p>
+        </div>
 
-    <script>
-      const queryString = window.location.search;
-      console.log(queryString);
-      const urlParams = new URLSearchParams(queryString);
-      const firstName = urlParams.get('fn');
-      console.log('firstName:', firstName);
-    </script>
+        <div class="hero__content">
+          <div class="hero__top">
+            <img class="hero__logo" src="./images/logo.svg" alt="logo" />
+
+            <ul class="hero__perks">
+              <li class="hero__perk">
+                <h3 class="hero__perk-title">LONGER</h3>
+                <p class="hero__perk-description">STAMINA</p>
+              </li>
+              <li class="hero__perk">
+                <h3 class="hero__perk-title">HARDER</h3>
+                <p class="hero__perk-description">ERECTIONS</p>
+              </li>
+              <li class="hero__perk">
+                <h3 class="hero__perk-title">STRONGER</h3>
+                <p class="hero__perk-description">PERFORMANCE</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hero-c__container">
+          <div class="hero-c__left">
+            <ul class="buy__list">
+              <li class="buy__item">
+                <div class="item__super-header">
+                  <p>WE RECOMMEND</p>
+                </div>
+                <div class="item__header">
+                  <p>BUY 3 GET FREE 2+1</p>
+                  <p>FREE SHIPPING</p>
+                </div>
+                <div class="buy__content">
+                  <div class="bottles">
+                    <div class="bottle">
+                      <img src="./images/checkout/3bottles.png" alt="" />
+                    </div>
+                    <p class="plus">+</p>
+                    <div class="bonus">
+                      <div>
+                        <img
+                          src="./images/checkout/2bottles-plus-gift.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="plus second-plus">+</p>
+                      <div class="NeuroVita">
+                        <img src="./images/checkout/NeuroVita.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price__info">
+                    <div class="item__price">
+                      <p>42.5 $</p>
+                      <span>/bottle</span>
+                    </div>
+                    <p class="price__retail">Retail <span>475$</span></p>
+                    <button class="btn-add">add to cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="buy__item active">
+                <div class="item__header">
+                  <p>BUY 2 GET FREE 2+1</p>
+                  <p>FREE SHIPPING</p>
+                </div>
+                <div class="buy__content">
+                  <div class="bottles">
+                    <div class="bottle">
+                      <img src="./images/checkout/2bottles.png" alt="" />
+                    </div>
+                    <p class="plus">+</p>
+                    <div class="bonus">
+                      <div>
+                        <img
+                          src="./images/checkout/2bottles-plus-gift.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="plus second-plus">+</p>
+                      <div class="VitaBoost">
+                        <img src="./images/checkout/VitaBoost.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price__info">
+                    <div class="item__price">
+                      <p>48.6 $</p>
+                      <span>/bottle</span>
+                    </div>
+                    <p class="price__retail">Retail <span>425$</span></p>
+                    <button class="btn-add">add to cart</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="buy__item">
+                <div class="item__header">
+                  <p>BUY 3 GET FREE 1+1</p>
+                  <p>FREE SHIPPING</p>
+                </div>
+                <div class="buy__content">
+                  <div class="bottles">
+                    <div class="bottle">
+                      <img src="./images/checkout/3bottles.png" alt="" />
+                    </div>
+                    <p class="plus">+</p>
+                    <div class="bonus">
+                      <div class="NeuroVita">
+                        <img src="./images/checkout/NeuroVita.png" alt="" />
+                      </div>
+                      <p class="plus second-plus">+</p>
+                      <div class="VitaBoost">
+                        <img src="./images/checkout/VitaBoost.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price__info">
+                    <div class="item__price">
+                      <p>57.5 $</p>
+                      <span>/bottle</span>
+                    </div>
+                    <p class="price__retail">Retail <span>340$</span></p>
+                    <button class="btn-add">add to cart</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-c__right">
+            <p class="hero-c__text">TRIPLE INTENSITY</p>
+            <h3 class="hero-c__title">Male Enhancement</h3>
+            <p class="hero-c__sub-title">For maximum Results</p>
+            <img src="./images/checkout/right-two-bottles.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

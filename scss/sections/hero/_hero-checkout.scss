@@ -1,0 +1,339 @@
+.hero-c__container {
+  position: relative;
+  z-index: 3;
+  padding: 28px 16px 40px;
+  display: flex;
+  gap: 36px;
+
+  @media screen and (min-width: 900px) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+
+  .hero-c__left {
+    width: 100%;
+  }
+
+  .buy__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width: 900px) {
+      gap: 80px;
+    }
+  }
+
+  .buy__item {
+    border-radius: 10px;
+    border: 2px solid var(--black, #212121);
+    background: var(--white, #fffcf9);
+    overflow: hidden;
+
+    &.active {
+      background: var(--beg, #e1b170);
+    }
+  }
+
+  .item__super-header {
+    padding: 8px;
+    background: var(
+      --green-gradient,
+      linear-gradient(90deg, #58b132 0%, #f5bc6f 100%)
+    );
+
+    p {
+      text-align: center;
+      color: var(--white, #fffcf9);
+      font-family: 'Roboto Condensed';
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px; /* 114.286% */
+    }
+  }
+
+  .item__header {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bordo, #8b1c00);
+
+    p {
+      color: var(--white, #fffcf9);
+      font-family: 'Roboto Condensed';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px; /* 140% */
+    }
+  }
+
+  .buy__content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 900px) {
+      min-height: 215px;
+      padding: 0 24px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .bottles {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @media screen and (min-width: 900px) {
+      max-width: 450px;
+    }
+  }
+
+  .bottle {
+    width: 60%;
+
+    @media screen and (min-width: 900px) {
+      width: fit-content;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+
+      @media screen and (min-width: 900px) {
+        object-fit: contain;
+        height: 100%;
+        scale: 1.2;
+      }
+    }
+  }
+
+  .plus {
+    margin-inline: 5px;
+    color: var(--black, #212121);
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .second-plus {
+    display: none;
+
+    @media screen and (min-width: 900px) {
+      display: block;
+    }
+  }
+
+  .bonus {
+    width: 50%;
+
+    @media screen and (min-width: 900px) {
+      display: flex;
+      align-items: center;
+      width: auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      @media screen and (min-width: 900px) {
+        width: 135px;
+        height: 148px;
+      }
+    }
+  }
+
+  .VitaBoost {
+    position: relative;
+
+    &::before {
+      content: 'Energy strips';
+      font-size: 14px;
+      position: absolute;
+      left: -70px;
+      top: 50%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid var(--black, #212121);
+      background: var(--bordo-02, #dd9482);
+    }
+
+    &::after {
+      content: '';
+      width: 40px;
+      height: 54px;
+      transform: rotate(-130deg);
+      position: absolute;
+      right: 0;
+      background-image: url('./images/svg/arrow.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      left: 0;
+      top: calc(50% - 40px);
+    }
+
+    @media screen and (min-width: 900px) {
+      &::before {
+        top: -40px;
+        right: 0;
+        left: auto;
+      }
+
+      &::after {
+        transform: rotate(30deg);
+        left: auto;
+        top: -8px;
+      }
+    }
+  }
+
+  .NeuroVita {
+    position: relative;
+
+    &::before {
+      content: 'Is a useful vitamin for men';
+      font-size: 14px;
+      position: absolute;
+      left: -150px;
+      top: 12px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid var(--black, #212121);
+      background: var(--bordo-02, #dd9482);
+    }
+
+    &::after {
+      content: '';
+      width: 40px;
+      height: 54px;
+      transform: scale(1, -1) rotate(-140deg);
+      position: absolute;
+      right: 0;
+      background-image: url('./images/svg/arrow.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      left: 0;
+      top: calc(50% - 40px);
+    }
+
+    @media screen and (min-width: 900px) {
+      &::before {
+        top: -40px;
+        left: -20px;
+        right: -20px;
+      }
+
+      &::after {
+        content: '';
+        transform: rotate(30deg);
+        right: 0;
+        left: auto;
+        top: -8px;
+      }
+    }
+  }
+
+  .price__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+  }
+
+  .item__price {
+    display: flex;
+    align-items: last baseline;
+    color: var(--black, #212121);
+    font-family: 'Bebas Neue';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 100% */
+
+    span {
+      color: var(--black, #212121);
+      font-family: 'Roboto Condensed';
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px; /* 133.333% */
+    }
+  }
+
+  .price__retail {
+    color: var(--black, #212121);
+    font-family: 'Roboto Condensed';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+
+    span {
+      position: relative;
+
+      &:after {
+        content: '';
+        content: '';
+        width: 120%;
+        height: 2px;
+        background-color: #515351;
+        position: absolute;
+        left: -5px;
+        top: 50%;
+      }
+    }
+  }
+
+  .hero-c__right {
+    display: none;
+
+    @media screen and (min-width: 900px) {
+      max-width: 412px;
+      display: flex;
+      max-width: 412px;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .hero-c__text {
+    color: var(--black, #212121);
+    font-family: 'Roboto Condensed';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 142.857% */
+    text-transform: uppercase;
+  }
+
+  .hero-c__title {
+    color: var(--white, #fffcf9);
+
+    /* H3 */
+    font-family: 'Bebas Neue';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px; /* 125% */
+  }
+
+  .hero-c__sub-title {
+    color: var(--black, #212121);
+
+    /* H4 */
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 120% */
+  }
+}

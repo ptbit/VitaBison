@@ -14,10 +14,6 @@
 }
 
 .swal2-close {
-  // position: absolute;
-  // top: 20px;
-  // right: 20px;
-
   &:focus-visible {
     box-shadow: none;
   }
@@ -30,7 +26,7 @@
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 142.857% */
+  line-height: 40px;
 }
 
 .footer__modal {
@@ -47,13 +43,11 @@
     background: var(--white, #fffcf9);
 
     color: var(--gray, #515351);
-
-    /* T5 regular */
     font-family: 'Roboto Condensed';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
   }
 
   .btn-rush {

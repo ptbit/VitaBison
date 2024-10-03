@@ -1,5 +1,5 @@
-console.log('slider2');
-const reviewSwiper = new Swiper('.swiper', {
+console.log('slider1');
+const reviewSwiper = new Swiper('.swiper-rev', {
   autoplay: {
     delay: 3000,
   },
