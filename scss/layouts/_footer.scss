@@ -10,10 +10,17 @@
 
   &__wrapper {
     padding: 32px 16px;
+
+    @media screen and (min-width: 900px) {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 48px 80px;
+    }
   }
 
   &__text {
-    margin-bottom: 30px;
+    max-width: 1170px;
+    margin: 0 auto 30px;
   }
 
   &__links {
@@ -35,4 +42,6 @@
 
   &__rights {
   }
+
+ 
 }
