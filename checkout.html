@@ -26,12 +26,20 @@
       defer
     ></script>
     <!-- <script src="./scripts/ingredients-slider.js" defer></script> -->
-    <!-- <script src="./scripts/reviews-slider.js" defer></script> -->
+    <script src="./scripts/checkout-reviews-slider.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- <script src="./scripts/modals.js" defer></script> -->
+    <script src="./scripts/faq.js" defer></script>
   </head>
+  <style>
+    :root {
+      --swiper-pagination-color: #fffcf9;
+      --swiper-pagination-bullet-inactive-color: #515351;
+    }
+  </style>
   <body>
     <main class="main">
+      <!--        -->
       <section class="hero">
         <div class="bg__top"></div>
         <div class="hero__bg"></div>
@@ -178,6 +186,359 @@
             <h3 class="hero-c__title">Male Enhancement</h3>
             <p class="hero-c__sub-title">For maximum Results</p>
             <img src="./images/checkout/right-two-bottles.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="checkout-reviews">
+        <div class="checkout-reviews__wrapper">
+          <h2 class="checkout-reviews__title">REVIEWS FROM PEOPLE LIKE YOU</h2>
+
+          <div class="swiper swiper-check-rev">
+            <div class="swiper-wrapper">
+              <li class="swiper-slide checkout-reviews__item">
+                <div class="checkout-reviews__avatar">
+                  <img src="./images/checkout/reviews/avatar-1.png" alt="" />
+                </div>
+                <div class="checkout-reviews__data">
+                  <img
+                    src="./images/reviews/stars.png"
+                    alt=""
+                    class="review_stars"
+                  />
+                  <div class="checkout-reviews__info">
+                    <p>Mari Yong</p>
+                    <span>Verified Customer</span>
+                  </div>
+                  <p class="checkout-reviews__text">
+                    I bought VitaBison for my husband. I thought nothing would
+                    help. But no, my husband took VitaBison for 3 months. Now my
+                    husband and I are very happy.
+                  </p>
+                </div>
+              </li>
+
+              <li class="swiper-slide checkout-reviews__item">
+                <div class="checkout-reviews__avatar">
+                  <img src="./images/checkout/reviews/avatar-2.png" alt="" />
+                </div>
+                <div class="checkout-reviews__data">
+                  <img
+                    src="./images/reviews/stars.png"
+                    alt=""
+                    class="review_stars"
+                  />
+                  <div class="checkout-reviews__info">
+                    <p>Cole Compton</p>
+                    <span>Verified Customer</span>
+                  </div>
+                  <p class="checkout-reviews__text">
+                    Things have not been great for us in a while, but since I
+                    tried Male Enhancement everything is way better.
+                  </p>
+                </div>
+              </li>
+
+              <li class="swiper-slide checkout-reviews__item">
+                <div class="checkout-reviews__avatar">
+                  <img src="./images/checkout/reviews/avatar-3.png" alt="" />
+                </div>
+                <div class="checkout-reviews__data">
+                  <img
+                    src="./images/reviews/stars.png"
+                    alt=""
+                    class="review_stars"
+                  />
+                  <div class="checkout-reviews__info">
+                    <p>Jake Harmon</p>
+                    <span>Verified Customer</span>
+                  </div>
+                  <p class="checkout-reviews__text">
+                    VitaBison was our find - after 3 months everything has
+                    improved and we are happy again.
+                  </p>
+                </div>
+              </li>
+
+              <li class="swiper-slide checkout-reviews__item">
+                <div class="checkout-reviews__avatar">
+                  <img src="./images/checkout/reviews/avatar-4.png" alt="" />
+                </div>
+                <div class="checkout-reviews__data">
+                  <img
+                    src="./images/reviews/stars.png"
+                    alt=""
+                    class="review_stars"
+                  />
+                  <div class="checkout-reviews__info">
+                    <p>Ethan Marshall</p>
+                    <span>Verified Customer</span>
+                  </div>
+                  <p class="checkout-reviews__text">
+                    I decided to try VitaBison after much hesitation. After 3
+                    months, my wife and I feel much closer to each other and our
+                    relationship is much stronger.
+                  </p>
+                </div>
+              </li>
+            </div>
+
+            <div class="swiper-pagination slider__pagination"></div>
+            <div class="slider__buttons">
+              <div class="swiper-btn swiper-prev">
+                <img src="./images/svg/arrow.png" alt="" />
+              </div>
+              <div class="swiper-btn swiper-next">
+                <img src="./images/svg/arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="bg__3"></div>
+        <div class="info__bg"></div>
+        <div class="faq__wrapper">
+          <h4 class="faq__title">faq</h4>
+
+          <ul class="faq__questions">
+            <li class="faq__question">
+              <div class="faq__top">
+                <p class="faq__text">Why should you use vitabison?</p>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="plus"
+                    x="14"
+                    width="4"
+                    height="32"
+                    rx="2"
+                    fill="white"
+                  />
+                  <rect y="14" width="32" height="4" rx="2" fill="white" />
+                </svg>
+              </div>
+              <div class="faq__answer">
+                <p>
+                  VitaBison consists of clinically tested ingredients that may
+                  help with male fertility, semen quality, and reproductive
+                  health to increase your chances of starting a family.
+                  Additionally, the carefully selected, natural ingredients in
+                  VitaBison may also help stimulate your sexual performance as
+                  well. All ingredients in VitaBison are 100% natural, safe, and
+                  free of side effects.
+                </p>
+              </div>
+            </li>
+
+            <li class="faq__question">
+              <div class="faq__top">
+                <p class="faq__text">Will my order be delivered discreetly?</p>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="plus"
+                    x="14"
+                    width="4"
+                    height="32"
+                    rx="2"
+                    fill="white"
+                  />
+                  <rect y="14" width="32" height="4" rx="2" fill="white" />
+                </svg>
+              </div>
+              <div class="faq__answer">
+                <p>
+                  Your privacy is incredibly important to us, and we take
+                  special care about delivering the product discreetly. It can
+                  be received only by the person whose name has been used to
+                  place the order
+                </p>
+              </div>
+            </li>
+
+            <li class="faq__question">
+              <div class="faq__top">
+                <p class="faq__text">Is VitaBison clinically tested to work?</p>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="plus"
+                    x="14"
+                    width="4"
+                    height="32"
+                    rx="2"
+                    fill="white"
+                  />
+                  <rect y="14" width="32" height="4" rx="2" fill="white" />
+                </svg>
+              </div>
+              <div class="faq__answer">
+                <p>
+                  All the ingredients used in VitaBison are 100% natural, based
+                  and selected on research, and safe to use.
+                </p>
+              </div>
+            </li>
+
+            <li class="faq__question">
+              <div class="faq__top">
+                <p class="faq__text">
+                  My husband has a low sperm count, can Vitaison help?
+                </p>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="plus"
+                    x="14"
+                    width="4"
+                    height="32"
+                    rx="2"
+                    fill="white"
+                  />
+                  <rect y="14" width="32" height="4" rx="2" fill="white" />
+                </svg>
+              </div>
+              <div class="faq__answer">
+                <p>
+                  Vitaison contains ingredients like D-Aspartic acid,
+                  Ashwagandha extract, Panax Ginseng, and Fenugreek that can
+                  naturally improve male fertility and semen production. That’s
+                  why Vitaison could be ideal for enhancing healthy sperm count,
+                  semen volume, and overcoming fertility issues. Your future
+                  family starts with Vitaison.
+                </p>
+              </div>
+            </li>
+
+            <li class="faq__question">
+              <div class="faq__top">
+                <p class="faq__text">How fast can I expect results?</p>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="plus"
+                    x="14"
+                    width="4"
+                    height="32"
+                    rx="2"
+                    fill="white"
+                  />
+                  <rect y="14" width="32" height="4" rx="2" fill="white" />
+                </svg>
+              </div>
+              <div class="faq__answer">
+                <p>
+                  Many of our satisfied customers start seeing the first
+                  results, especially better sexual performance, within the
+                  first weeks of taking VitaBison. The best results for improved
+                  fertility and reproduction happen after taking the product for
+                  at least 3 months. Results may vary per person.
+                </p>
+              </div>
+            </li>
+
+            <li class="faq__question">
+              <div class="faq__top">
+                <p class="faq__text">
+                  Are there additional benefits aside from fertility and
+                  reproduction?
+                </p>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    class="plus"
+                    x="14"
+                    width="4"
+                    height="32"
+                    rx="2"
+                    fill="white"
+                  />
+                  <rect y="14" width="32" height="4" rx="2" fill="white" />
+                </svg>
+              </div>
+              <div class="faq__answer">
+                <p>
+                  Yes. VitaBison is designed to safely and naturally boost male
+                  fertility and reproductive health. To achieve this, the
+                  powerful ingredients in VitaBison support many important
+                  processes in your body. This results in additional benefits
+                  such as improved sexual performance, increased ejaculate
+                  volume, better erections, and more intense orgasms.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="perks">
+        <div class="perks__wrapper">
+          <h4 class="perks__title">MALE PERFORMANCE GUMMIES</h4>
+          <div class="perks__list">
+            <div class="perks__item">
+              <div class="item__img">
+                <img src="./images/checkout/perks/perk-1.png" alt="" />
+              </div>
+              <div>
+                <h4 class="item__title">30 days money back</h4>
+                <p class="item__text">
+                  We are so confident in our products and services, that we back
+                  it with a 30 days money back guarantee. If for any reason you
+                  are not fully satisfied with our products, simply return any
+                  unopened products within 30 days from when the order was
+                  placed. We will refund you purchase with absolutely no hassle.
+                </p>
+              </div>
+            </div>
+
+            <div class="perks__item">
+              <div class="item__img">
+                <img src="./images/checkout/perks/perk-2.png" alt="" />
+              </div>
+              <h4 class="item__title">
+                THE NUMBER ONE MALE ENHANCEMENT GUMMY IN THE US
+              </h4>
+            </div>
+          </div>
+
+          <div class="perks__icons">
+            <img
+              src="./images/checkout/perks/perks.png"
+              alt=""
+              class="perks__img"
+            />
           </div>
         </div>
       </section>
