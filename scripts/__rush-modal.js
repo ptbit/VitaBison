@@ -1,13 +1,22 @@
 const rushFormHTML = `
 <div class="footer__modal">
-  <form>
+  <form id="final-form">
     <input id="form-input1" class="form-input" placeholder="First name" require>
     <input id="form-input2" class="form-input" placeholder="Last name">
     <button class="btn-rush" type="submit">RUSH MY ORDER</button>
   </form>
 </div>
+<script>
+const form = document.getElementById('final-form');
+
+form.addEventListener('submit', (e) => {
+  e.prevent.default();
+  console.log('FORM');
+});
+
+</script
 `;
-const rushButtons = document.querySelectorAll('.btn-rush');
+const rushButtons = document.querySelectorAll('.btn-add');
 
 rushButtons.forEach((btn) =>
   btn.addEventListener('click', () => {

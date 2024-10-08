@@ -30,27 +30,27 @@
 }
 
 .footer__modal {
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+  // form {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 16px;
+  // }
 
-  .form-input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 5px;
-    background: var(--white, #fffcf9);
+  // .form-input {
+  //   width: 100%;
+  //   padding: 12px;
+  //   border-radius: 5px;
+  //   background: var(--white, #fffcf9);
 
-    color: var(--gray, #515351);
-    font-family: 'Roboto Condensed';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-  }
+  //   color: var(--gray, #515351);
+  //   font-family: 'Roboto Condensed';
+  //   font-size: 16px;
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   line-height: 24px;
+  // }
 
-  .btn-rush {
-    width: 100%;
-  }
+  // .btn-rush {
+  //   width: 100%;
+  // }
 }

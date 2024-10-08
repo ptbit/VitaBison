@@ -1,0 +1,93 @@
+.hero-t__container {
+  position: relative;
+  z-index: 4;
+  padding: 40px 10px;
+
+  @media screen and (min-width: 900px) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px 80px 0;
+  }
+
+  .hero-t__top {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 40px;
+
+    @media screen and (min-width: 900px) {
+      justify-content: start;
+      margin: 0 auto 74px;
+    }
+  }
+
+  .hero-t__bottom {
+    padding: 24px 16px;
+    border-radius: 12px;
+    background: var(
+      --gradient-bordo,
+      linear-gradient(90deg, #7e0f0e 0%, #f5bc6f 100%)
+    );
+    color: var(--white, #fffcf9);
+
+    @media screen and (min-width: 900px) {
+      max-width: 774px;
+      margin: 0 auto;
+      padding: 49px;
+    }
+  }
+
+  .hero-t__title {
+    margin-bottom: 16px;
+
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    line-height: 48px;
+
+    @media screen and (min-width: 900px) {
+      text-align: left;
+      font-size: 64px;
+      line-height: 80px;
+    }
+  }
+
+  .hero-t__text {
+    margin-bottom: 12px;
+    font-family: 'Roboto Condensed';
+    line-height: 24px;
+
+    @media screen and (min-width: 900px) {
+      margin-bottom: 20px;
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+  .hero-t__btn {
+    background: var(linear-gradient(90deg, #7e0f0e 0%, #f5bc6f 100%));
+
+    display: block;
+    margin-top: 28px;
+    width: 100%;
+    padding: 12px 16px;
+    text-align: center;
+
+    border-radius: 5px;
+    border: 3px solid #8b1c00;
+
+    font-family: 'Bebas Neue';
+    font-size: 28px;
+    line-height: 32px;
+    transition: all 1s linear;
+
+    &:hover {
+      background: #7e0f0e;
+      border: 3px solid #f5bc6f;
+    }
+
+    @media screen and (min-width: 900px) {
+      margin: 40px auto 0;
+      max-width: 236px;
+    }
+  }
+}

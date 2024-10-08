@@ -34,6 +34,10 @@
     &.active {
       background: var(--beg, #e1b170);
     }
+
+    button {
+      cursor: pointer;
+    }
   }
 
   .item__super-header {

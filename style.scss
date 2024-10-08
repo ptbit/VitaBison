@@ -7,6 +7,7 @@
 @import './scss/base/global';
 // @import './scss/base/animations';
 // components
+@import './scss/layouts/form';
 @import './scss/layouts/modal';
 @import './scss/layouts/header';
 @import './scss/layouts/footer';
@@ -29,3 +30,6 @@
 @import './scss/sections/checkout_reviews/checkout_reviews';
 @import './scss/sections/faq/faq';
 @import './scss/sections/perks/perks';
+
+//typ
+@import './scss/sections/hero/hero-typ';
