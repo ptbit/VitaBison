@@ -26,7 +26,6 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
-    <!-- <script src="./scripts/ingredients-slider.js" defer></script> -->
     <script src="./scripts/checkout-reviews-slider.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./scripts/modals.js" defer></script>
@@ -34,6 +33,7 @@
     <script src="./scripts/checkout-script.js" defer></script>
     <script src="./scripts/mono.js" defer></script>
     <script src="./scripts/limit.js" defer></script>
+    <script src="./scripts/sales.js" defer></script>
   </head>
   <style>
     :root {
@@ -42,6 +42,14 @@
     }
   </style>
   <body>
+    <div class="sale" id="toast">
+      <div class="sale__img">
+        <img src="./images/bank-tel.png" alt="" />
+      </div>
+      <div class="sale__text"></div>
+      <div class="sale__progress-bar" id="progressBar"></div>
+    </div>
+
     <main class="main">
       <section class="hero">
         <div class="bg__top"></div>

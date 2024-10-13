@@ -1,0 +1,81 @@
+.sale {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 288px;
+  height: 88px;
+  z-index: 9;
+  border-radius: 4px;
+  background: var(--white, #fffcf9);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+  padding-inline: 12px;
+  display: none;
+  gap: 6px;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  &.show {
+    display: flex;
+    opacity: 1;
+    animation: slideIn 0.5s forwards;
+  }
+
+  &.hide {
+    animation: slideOut 0.5s forwards;
+  }
+
+  &__img {
+    height: 100%;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    color: var(--black, #212121);
+    font-family: 'Roboto Condensed';
+    font-size: 14px;
+    line-height: 20px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #28a745;
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 3s linear; // Анімація на 3 секунди
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
