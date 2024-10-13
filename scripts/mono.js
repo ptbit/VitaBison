@@ -211,9 +211,9 @@ async function sendData(SET, userData) {
   // Додаємо поле reference для передавання даних користувача
   monoBody.merchantPaymInfo.reference = userData;
 
-  console.log('Selected set:', SET);
-  console.log('Body sent to Monobank:', monoBody);
-  console.log('userData:', userData);
+  // console.log('Selected set:', SET);
+  // console.log('Body sent to Monobank:', monoBody);
+  // console.log('userData:', userData);
 
   try {
     const response = await fetch(url, {
@@ -232,7 +232,7 @@ async function sendData(SET, userData) {
     }
 
     const json = await response.json();
-    console.log(json);
+    // console.log(json);
     const goToUrl = json.pageUrl;
     window.location.href = goToUrl;
   } catch (error) {

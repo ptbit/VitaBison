@@ -21,6 +21,16 @@
     position: relative;
     background-color: $c-black;
     z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s linear;
+    margin-top: -80px;
+
+    &.active {
+      margin-top: 0;
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   &__message-text {

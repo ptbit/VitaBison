@@ -319,6 +319,15 @@ body.no-scroll {
   position: relative;
   background-color: #212121;
   z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s linear;
+  margin-top: -80px;
+}
+.hero__message.active {
+  margin-top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 .hero__message-text {
   text-align: center;
