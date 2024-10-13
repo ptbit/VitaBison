@@ -3,7 +3,7 @@ const bodyVariants = [
     amount: 25500,
     ccy: 840,
     merchantPaymInfo: {
-      reference: 'order123',
+      reference: 'order-set-1',
       destination: '5 VitaBison + 1 NeuroVita',
       comment: '',
       customerEmails: [],
@@ -51,7 +51,7 @@ const bodyVariants = [
     amount: 24300,
     ccy: 840,
     merchantPaymInfo: {
-      reference: 'order321',
+      reference: 'order-set-2',
       destination: '4 VitaBison + 1 VitaBoost',
       comment: '',
       customerEmails: [],
@@ -99,7 +99,7 @@ const bodyVariants = [
     amount: 23000,
     ccy: 840,
     merchantPaymInfo: {
-      reference: 'order321',
+      reference: 'order-set-3',
       destination: '4 VitaBison + 1 VitaBoost',
       comment: '',
       customerEmails: [],
@@ -143,12 +143,52 @@ const bodyVariants = [
     validity: 3600,
     paymentType: 'debit',
   },
-];
+  {
+    amount: 100,
+    ccy: 980,
+    merchantPaymInfo: {
+      reference: 'test-order-set',
+      destination: 'only for test',
+      comment: '',
+      customerEmails: [],
 
+      basketOrder: [
+        {
+          name: 'VitaBison',
+          qty: 1,
+          sum: 100,
+          total: 100,
+          icon: 'https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png',
+          unit: 'pcs',
+          code: 'VitaBison-1',
+          header: 'VitaBison header',
+          footer: 'VitaBison footer',
+        },
+      ],
+    },
+    validity: 3600,
+    paymentType: 'debit',
+  },
+];
 const form = document.getElementById('form');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+
+  // Отримуємо дані з форми
+  const formData = new FormData(form);
+  const firstName = formData.get('first_name');
+  const lastName = formData.get('last_name');
+  const zipcode = formData.get('zip');
+  const address = formData.get('address1');
+  const city = formData.get('city');
+  const state = formData.get('state');
+  const phone = formData.get('phone');
+  const email = formData.get('email');
+
+  // Формуємо строку для поля reference
+  const userData = `${firstName}|${lastName}|${zipcode}|${address}|${city}|${state}|${phone}|${email}`;
+
   const liItems = document.querySelectorAll('.buy__item');
   let SET = 0;
 
@@ -158,32 +198,45 @@ form.addEventListener('submit', (e) => {
     }
   });
 
-  console.log(SET);
-  sendData(SET);
+  sendData(SET, userData);
 });
 
-const TOKEN = '***';
-
-async function sendData(SET) {
-  const url = 'https://api.monobank.ua/api/merchant/invoice/create';
+async function sendData(SET, userData) {
+  const url = '/mono.php';
   const monoBody = bodyVariants[SET - 1];
+
+  // Додаємо поле destination для відслідковування вибраного набору
+  monoBody.merchantPaymInfo.destination = `order${SET}`;
+
+  // Додаємо поле reference для передавання даних користувача
+  monoBody.merchantPaymInfo.reference = userData;
+
+  console.log('Selected set:', SET);
+  console.log('Body sent to Monobank:', monoBody);
+  console.log('userData:', userData);
+
   try {
     const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Token': TOKEN,
       },
-      body: JSON.stringify(monoBody),
+      body: JSON.stringify({
+        ...monoBody, // Передаємо все з monoBody
+        set: SET, // Додаємо SET для передачі в mono.php
+      }),
     });
+
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
 
     const json = await response.json();
+    console.log(json);
     const goToUrl = json.pageUrl;
     window.location.href = goToUrl;
   } catch (error) {
     console.error(error.message);
   }
 }
+

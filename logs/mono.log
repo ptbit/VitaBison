@@ -1,0 +1,532 @@
+[2024-10-12 15:43:32] Received data from mono.js:
+[2024-10-12 15:43:32] Array
+(
+    [amount] => 100
+    [ccy] => 980
+    [merchantPaymInfo] => Array
+        (
+            [reference] => John|Travoltavich|21218|450 E 22nd St|Baltimore|MD|+102656454565|john.josephtravolta@gmail.com
+            [destination] => order4
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 1
+                            [sum] => 100
+                            [total] => 100
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 4
+)
+
+[2024-10-12 15:43:32] Prepared data for Monobank:
+[2024-10-12 15:43:32] Array
+(
+    [amount] => 100
+    [ccy] => 980
+    [merchantPaymInfo] => Array
+        (
+            [reference] => John|Travoltavich|21218|450 E 22nd St|Baltimore|MD|+102656454565|john.josephtravolta@gmail.com
+            [destination] => order4
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 1
+                            [sum] => 100
+                            [total] => 100
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 4
+    [redirectUrl] => https://vitabisfresh.tech/typ.html
+    [webHookUrl] => https://vitabisfresh.tech/mono-hook.php
+)
+
+[2024-10-12 15:43:32] Monobank API response:
+[2024-10-12 15:43:32] {"invoiceId":"241012EiyTtyKsZoUS3c","pageUrl":"https://pay.mbnk.biz/241012EiyTtyKsZoUS3c"}
+[2024-10-13 07:22:39] Received data from mono.js:
+[2024-10-13 07:22:39] Array
+(
+    [amount] => 100
+    [ccy] => 980
+    [merchantPaymInfo] => Array
+        (
+            [reference] => XL|Set|19148|2651 S Hutchinson St, apart 122|Philadelphia|PA|+102656454567|testXLvariant@test.com
+            [destination] => order4
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 1
+                            [sum] => 100
+                            [total] => 100
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 4
+)
+
+[2024-10-13 07:22:39] Prepared data for Monobank:
+[2024-10-13 07:22:39] Array
+(
+    [amount] => 100
+    [ccy] => 980
+    [merchantPaymInfo] => Array
+        (
+            [reference] => XL|Set|19148|2651 S Hutchinson St, apart 122|Philadelphia|PA|+102656454567|testXLvariant@test.com
+            [destination] => order4
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 1
+                            [sum] => 100
+                            [total] => 100
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 4
+    [redirectUrl] => https://vitabisfresh.tech/typ.html
+    [webHookUrl] => https://vitabisfresh.tech/mono-hook.php
+)
+
+[2024-10-13 07:22:40] Monobank API response:
+[2024-10-13 07:22:40] {"invoiceId":"241013ByRqBtTQZpeFYq","pageUrl":"https://pay.mbnk.biz/241013ByRqBtTQZpeFYq"}
+[2024-10-13 07:33:41] Received data from mono.js:
+[2024-10-13 07:33:41] Array
+(
+    [amount] => 24300
+    [ccy] => 840
+    [merchantPaymInfo] => Array
+        (
+            [reference] => |||||||
+            [destination] => order2
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 2
+                            [sum] => 12150
+                            [total] => 24300
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 2
+                            [sum] => 0
+                            [total] => 0
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                    [2] => Array
+                        (
+                            [name] => VitaBoost
+                            [qty] => 1
+                            [sum] => 0
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/checkout/VitaBoost.png
+                            [total] => 0
+                            [unit] => pc
+                            [code] => VitaBoost-1
+                            [header] => VitaBoost header
+                            [footer] => VitaBoost footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 2
+)
+
+[2024-10-13 07:33:41] Prepared data for Monobank:
+[2024-10-13 07:33:41] Array
+(
+    [amount] => 24300
+    [ccy] => 840
+    [merchantPaymInfo] => Array
+        (
+            [reference] => |||||||
+            [destination] => order2
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 2
+                            [sum] => 12150
+                            [total] => 24300
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 2
+                            [sum] => 0
+                            [total] => 0
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                    [2] => Array
+                        (
+                            [name] => VitaBoost
+                            [qty] => 1
+                            [sum] => 0
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/checkout/VitaBoost.png
+                            [total] => 0
+                            [unit] => pc
+                            [code] => VitaBoost-1
+                            [header] => VitaBoost header
+                            [footer] => VitaBoost footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 2
+    [redirectUrl] => https://vitabisfresh.tech/typ.html
+    [webHookUrl] => https://vitabisfresh.tech/mono-hook.php
+)
+
+[2024-10-13 07:33:42] Monobank API response:
+[2024-10-13 07:33:42] {"invoiceId":"241013Fg5WQhz7YV1Nj","pageUrl":"https://pay.mbnk.biz/241013Fg5WQhz7YV1Nj"}
+[2024-10-13 07:40:44] Received data from mono.js:
+[2024-10-13 07:40:44] Array
+(
+    [amount] => 100
+    [ccy] => 980
+    [merchantPaymInfo] => Array
+        (
+            [reference] => SET|Lsize|11225|1207 Carroll St|Brooklyn|NY|+102656454566|testLvariant@test.com
+            [destination] => order4
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 1
+                            [sum] => 100
+                            [total] => 100
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 4
+)
+
+[2024-10-13 07:40:44] Prepared data for Monobank:
+[2024-10-13 07:40:44] Array
+(
+    [amount] => 100
+    [ccy] => 980
+    [merchantPaymInfo] => Array
+        (
+            [reference] => SET|Lsize|11225|1207 Carroll St|Brooklyn|NY|+102656454566|testLvariant@test.com
+            [destination] => order4
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 1
+                            [sum] => 100
+                            [total] => 100
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 4
+    [redirectUrl] => https://vitabisfresh.tech/typ.html
+    [webHookUrl] => https://vitabisfresh.tech/mono-hook.php
+)
+
+[2024-10-13 07:40:45] Monobank API response:
+[2024-10-13 07:40:45] {"invoiceId":"241013jQV7PUW49EkSL","pageUrl":"https://pay.mbnk.biz/241013jQV7PUW49EkSL"}
+[2024-10-13 07:47:17] Received data from mono.js:
+[2024-10-13 07:47:17] Array
+(
+    [amount] => 100
+    [ccy] => 980
+    [merchantPaymInfo] => Array
+        (
+            [reference] => SET|Lsize|11225|1207 Carroll St|Brooklyn|NY|+102656454566|testLvariant@test.com
+            [destination] => order4
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 1
+                            [sum] => 100
+                            [total] => 100
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 4
+)
+
+[2024-10-13 07:47:17] Prepared data for Monobank:
+[2024-10-13 07:47:17] Array
+(
+    [amount] => 100
+    [ccy] => 980
+    [merchantPaymInfo] => Array
+        (
+            [reference] => SET|Lsize|11225|1207 Carroll St|Brooklyn|NY|+102656454566|testLvariant@test.com
+            [destination] => order4
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 1
+                            [sum] => 100
+                            [total] => 100
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 4
+    [redirectUrl] => https://vitabisfresh.tech/typ.html
+    [webHookUrl] => https://vitabisfresh.tech/mono-hook.php
+)
+
+[2024-10-13 07:47:18] Monobank API response:
+[2024-10-13 07:47:18] {"invoiceId":"2410132ZHg4NWi4JbCdZ","pageUrl":"https://pay.mbnk.biz/2410132ZHg4NWi4JbCdZ"}
+[2024-10-13 07:54:10] Received data from mono.js:
+[2024-10-13 07:54:10] Array
+(
+    [amount] => 100
+    [ccy] => 980
+    [merchantPaymInfo] => Array
+        (
+            [reference] => SET|Msize|94080|464 Miller Ave|South San Francisco|CA|+102656454564|testMvariant@test.com
+            [destination] => order4
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 1
+                            [sum] => 100
+                            [total] => 100
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 4
+)
+
+[2024-10-13 07:54:10] Prepared data for Monobank:
+[2024-10-13 07:54:10] Array
+(
+    [amount] => 100
+    [ccy] => 980
+    [merchantPaymInfo] => Array
+        (
+            [reference] => SET|Msize|94080|464 Miller Ave|South San Francisco|CA|+102656454564|testMvariant@test.com
+            [destination] => order4
+            [comment] => 
+            [customerEmails] => Array
+                (
+                )
+
+            [basketOrder] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => VitaBison
+                            [qty] => 1
+                            [sum] => 100
+                            [total] => 100
+                            [icon] => https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png
+                            [unit] => pcs
+                            [code] => VitaBison-1
+                            [header] => VitaBison header
+                            [footer] => VitaBison footer
+                        )
+
+                )
+
+        )
+
+    [validity] => 3600
+    [paymentType] => debit
+    [set] => 4
+    [redirectUrl] => https://vitabisfresh.tech/typ.html
+    [webHookUrl] => https://vitabisfresh.tech/mono-hook.php
+)
+
+[2024-10-13 07:54:10] Monobank API response:
+[2024-10-13 07:54:10] {"invoiceId":"241013DBmf7Jt8Ubw5Aq","pageUrl":"https://pay.mbnk.biz/241013DBmf7Jt8Ubw5Aq"}

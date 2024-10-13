@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VitaBison Checkout</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
@@ -33,6 +33,7 @@
     <script src="./scripts/faq.js" defer></script>
     <script src="./scripts/checkout-script.js" defer></script>
     <script src="./scripts/mono.js" defer></script>
+    <!-- <script src="./scripts/sendOrder.js" defer></script> -->
     <!-- <script src="./scripts/rush-modal.js" defer></script> -->
   </head>
   <style>
@@ -181,6 +182,38 @@
                   </div>
                 </div>
               </li>
+
+              <!-- <li class="buy__item" data-set="4">
+                <div class="item__header">
+                  <p>TEST ORDER</p>
+                  <p>FREE SHIPPING</p>
+                </div>
+                <div class="buy__content">
+                  <div class="bottles">
+                    <div class="bottle">
+                      <img src="./images/checkout/2bottles.png" alt="" />
+                    </div>
+                    <p class="plus">+</p>
+                    <div class="bonus">
+                      <div class="NeuroVita">
+                        <img src="./images/checkout/NeuroVita.png" alt="" />
+                      </div>
+                      <p class="plus second-plus">+</p>
+                      <div class="VitaBoost">
+                        <img src="./images/checkout/VitaBoost.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price__info">
+                    <div class="item__price">
+                      <p>1 грн</p>
+                      <span>/bottle</span>
+                    </div>
+                    <p class="price__retail">Retail <span>999$</span></p>
+                    <button class="btn-add">add to cart</button>
+                  </div>
+                </div>
+              </li> -->
             </ul>
           </div>
 
@@ -309,23 +342,25 @@
             <li class="faq__question">
               <div class="faq__top">
                 <p class="faq__text">Why should you use vitabison?</p>
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    class="plus"
-                    x="14"
-                    width="4"
+                <div class="faq__svg">
+                  <svg
+                    width="32"
                     height="32"
-                    rx="2"
-                    fill="white"
-                  />
-                  <rect y="14" width="32" height="4" rx="2" fill="white" />
-                </svg>
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      class="plus"
+                      x="14"
+                      width="4"
+                      height="32"
+                      rx="2"
+                      fill="white"
+                    />
+                    <rect y="14" width="32" height="4" rx="2" fill="white" />
+                  </svg>
+                </div>
               </div>
               <div class="faq__answer">
                 <p>
@@ -343,23 +378,25 @@
             <li class="faq__question">
               <div class="faq__top">
                 <p class="faq__text">Will my order be delivered discreetly?</p>
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    class="plus"
-                    x="14"
-                    width="4"
+                <div class="faq__svg">
+                  <svg
+                    width="32"
                     height="32"
-                    rx="2"
-                    fill="white"
-                  />
-                  <rect y="14" width="32" height="4" rx="2" fill="white" />
-                </svg>
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      class="plus"
+                      x="14"
+                      width="4"
+                      height="32"
+                      rx="2"
+                      fill="white"
+                    />
+                    <rect y="14" width="32" height="4" rx="2" fill="white" />
+                  </svg>
+                </div>
               </div>
               <div class="faq__answer">
                 <p>
@@ -374,23 +411,25 @@
             <li class="faq__question">
               <div class="faq__top">
                 <p class="faq__text">Is VitaBison clinically tested to work?</p>
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    class="plus"
-                    x="14"
-                    width="4"
+                <div class="faq__svg">
+                  <svg
+                    width="32"
                     height="32"
-                    rx="2"
-                    fill="white"
-                  />
-                  <rect y="14" width="32" height="4" rx="2" fill="white" />
-                </svg>
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      class="plus"
+                      x="14"
+                      width="4"
+                      height="32"
+                      rx="2"
+                      fill="white"
+                    />
+                    <rect y="14" width="32" height="4" rx="2" fill="white" />
+                  </svg>
+                </div>
               </div>
               <div class="faq__answer">
                 <p>
@@ -405,23 +444,25 @@
                 <p class="faq__text">
                   My husband has a low sperm count, can Vitaison help?
                 </p>
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    class="plus"
-                    x="14"
-                    width="4"
+                <div class="faq__svg">
+                  <svg
+                    width="32"
                     height="32"
-                    rx="2"
-                    fill="white"
-                  />
-                  <rect y="14" width="32" height="4" rx="2" fill="white" />
-                </svg>
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      class="plus"
+                      x="14"
+                      width="4"
+                      height="32"
+                      rx="2"
+                      fill="white"
+                    />
+                    <rect y="14" width="32" height="4" rx="2" fill="white" />
+                  </svg>
+                </div>
               </div>
               <div class="faq__answer">
                 <p>
@@ -438,23 +479,25 @@
             <li class="faq__question">
               <div class="faq__top">
                 <p class="faq__text">How fast can I expect results?</p>
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    class="plus"
-                    x="14"
-                    width="4"
+                <div class="faq__svg">
+                  <svg
+                    width="32"
                     height="32"
-                    rx="2"
-                    fill="white"
-                  />
-                  <rect y="14" width="32" height="4" rx="2" fill="white" />
-                </svg>
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      class="plus"
+                      x="14"
+                      width="4"
+                      height="32"
+                      rx="2"
+                      fill="white"
+                    />
+                    <rect y="14" width="32" height="4" rx="2" fill="white" />
+                  </svg>
+                </div>
               </div>
               <div class="faq__answer">
                 <p>
@@ -473,23 +516,25 @@
                   Are there additional benefits aside from fertility and
                   reproduction?
                 </p>
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    class="plus"
-                    x="14"
-                    width="4"
+                <div class="faq__svg">
+                  <svg
+                    width="32"
                     height="32"
-                    rx="2"
-                    fill="white"
-                  />
-                  <rect y="14" width="32" height="4" rx="2" fill="white" />
-                </svg>
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      class="plus"
+                      x="14"
+                      width="4"
+                      height="32"
+                      rx="2"
+                      fill="white"
+                    />
+                    <rect y="14" width="32" height="4" rx="2" fill="white" />
+                  </svg>
+                </div>
               </div>
               <div class="faq__answer">
                 <p>
@@ -593,14 +638,56 @@
           <h4 class="popup__title">WHERE DO WE SEND YOUR ORDER?</h4>
 
           <form action="" class="popup__form" id="form">
-            <input type="text" placeholder="First name" minlength="2" />
-            <input type="text" placeholder="Last name" minlength="2" />
-            <input type="text" placeholder="Zipcode" minlength="5" />
-            <input type="text" placeholder="Address" minlength="2" />
-            <input type="text" placeholder="City" minlength="2" />
-            <input type="text" placeholder="State" minlength="2" />
-            <input type="tel" placeholder="Phone" minlength="10" />
-            <input type="email" placeholder="Email" />
+            <input
+              type="text"
+              placeholder="First name"
+              name="first_name"
+              minlength="2"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              name="last_name"
+              minlength="2"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Zipcode"
+              name="zip"
+              minlength="5"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Address street"
+              name="address1"
+              minlength="2"
+              required
+            />
+            <input
+              type="text"
+              placeholder="City"
+              name="city"
+              minlength="2"
+              required
+            />
+            <input
+              type="text"
+              placeholder="State"
+              name="state"
+              minlength="2"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Phone"
+              name="phone"
+              minlength="10"
+              required
+            />
+            <input type="email" placeholder="Email" name="email" required />
 
             <button class="btn-add" type="submit">RUSH MY ORDER</button>
           </form>

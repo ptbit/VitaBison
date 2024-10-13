@@ -2348,6 +2348,7 @@ body.no-scroll {
   color: var(--white, #fffcf9);
   font-family: "Roboto Condensed";
   line-height: 24px;
+  transition: 0.6s all linear;
 }
 .faq .faq__question.active .faq__answer {
   max-height: 300px;

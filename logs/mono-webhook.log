@@ -1,0 +1,587 @@
+[2024-10-12 15:43:33] Received data from Monobank:
+[2024-10-12 15:43:33] Array
+(
+    [invoiceId] => 241012EiyTtyKsZoUS3c
+    [status] => created
+    [amount] => 100
+    [ccy] => 980
+    [createdDate] => 2024-10-12T15:43:32Z
+    [modifiedDate] => 2024-10-12T15:43:32Z
+    [reference] => John|Travoltavich|21218|450 E 22nd St|Baltimore|MD|+102656454565|john.josephtravolta@gmail.com
+    [destination] => order4
+)
+
+[2024-10-12 15:43:33] Transaction failed or not successful.
+[2024-10-12 15:44:16] Received data from Monobank:
+[2024-10-12 15:44:16] Array
+(
+    [invoiceId] => 241012EiyTtyKsZoUS3c
+    [status] => processing
+    [amount] => 100
+    [ccy] => 980
+    [finalAmount] => 0
+    [createdDate] => 2024-10-12T15:43:32Z
+    [modifiedDate] => 2024-10-12T15:44:15Z
+    [reference] => John|Travoltavich|21218|450 E 22nd St|Baltimore|MD|+102656454565|john.josephtravolta@gmail.com
+    [destination] => order4
+)
+
+[2024-10-12 15:44:16] Transaction failed or not successful.
+[2024-10-12 15:44:45] Received data from Monobank:
+[2024-10-12 15:44:45] Array
+(
+    [invoiceId] => 241012EiyTtyKsZoUS3c
+    [status] => success
+    [payMethod] => pan
+    [amount] => 100
+    [ccy] => 980
+    [finalAmount] => 100
+    [createdDate] => 2024-10-12T15:43:32Z
+    [modifiedDate] => 2024-10-12T15:44:44Z
+    [reference] => John|Travoltavich|21218|450 E 22nd St|Baltimore|MD|+102656454565|john.josephtravolta@gmail.com
+    [destination] => order4
+    [paymentInfo] => Array
+        (
+            [rrn] => 036098562053
+            [approvalCode] => 509174
+            [tranId] => 15165440495
+            [terminal] => MI019788
+            [bank] => ПриватБанк
+            [paymentSystem] => visa
+            [country] => 804
+            [fee] => 1
+            [paymentMethod] => pan
+            [maskedPan] => 41496293******79
+        )
+
+)
+
+[2024-10-12 15:44:45] Transaction status: success
+[2024-10-12 15:44:45] Selected set: order4
+[2024-10-12 15:44:45] Final amount: 1
+[2024-10-12 15:44:45] Order data to Shopify:
+[2024-10-12 15:44:45] Array
+(
+    [order] => Array
+        (
+            [line_items] => Array
+                (
+                    [0] => Array
+                        (
+                            [title] => VitaBisonXL
+                            [variant_id] => 41879531094121
+                            [price] => 42.5
+                            [quantity] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [title] => VitaBisonL
+                            [variant_id] => 41884283764841
+                            [price] => 48.6
+                            [quantity] => 1
+                        )
+
+                    [2] => Array
+                        (
+                            [title] => VitaBisonM
+                            [variant_id] => 41884282978409
+                            [price] => 57.5
+                            [quantity] => 1
+                        )
+
+                    [3] => Array
+                        (
+                            [title] => VitaBoostL
+                            [variant_id] => 41879531454569
+                            [price] => 48.6
+                            [quantity] => 1
+                        )
+
+                    [4] => Array
+                        (
+                            [title] => VitaBoostM
+                            [variant_id] => 41884283895913
+                            [price] => 57.5
+                            [quantity] => 1
+                        )
+
+                    [5] => Array
+                        (
+                            [title] => NeuroVitaXL
+                            [variant_id] => 41879531323497
+                            [price] => 42.5
+                            [quantity] => 1
+                        )
+
+                    [6] => Array
+                        (
+                            [title] => VitaBisonM
+                            [variant_id] => 41884283994217
+                            [price] => 57.5
+                            [quantity] => 1
+                        )
+
+                )
+
+            [transactions] => Array
+                (
+                    [0] => Array
+                        (
+                            [kind] => sale
+                            [status] => success
+                            [amount] => 354.7
+                        )
+
+                )
+
+            [total_tax] => 0
+            [currency] => USD
+            [email] => john.josephtravolta@gmail.com
+            [shipping_address] => Array
+                (
+                    [first_name] => John
+                    [last_name] => Travoltavich
+                    [address1] => 450 E 22nd St
+                    [city] => Baltimore
+                    [province] => MD
+                    [zip] => 21218
+                    [phone] => +102656454565
+                    [country] => United States
+                    [province_code] => MD
+                    [country_code] => US
+                )
+
+        )
+
+)
+
+[2024-10-12 15:44:45] Shopify API response:
+[2024-10-12 15:44:45] {"order":{"id":6232214437993,"admin_graphql_api_id":"gid:\/\/shopify\/Order\/6232214437993","app_id":168431550465,"browser_ip":null,"buyer_accepts_marketing":false,"cancel_reason":null,"cancelled_at":null,"cart_token":null,"checkout_id":null,"checkout_token":null,"client_details":null,"closed_at":null,"confirmation_number":"H8Y5CDRRY","confirmed":true,"created_at":"2024-10-12T17:44:45+02:00","currency":"USD","current_subtotal_price":"354.70","current_subtotal_price_set":{"shop_money":{"amount":"354.70","currency_code":"USD"},"presentment_money":{"amount":"354.70","currency_code":"USD"}},"current_total_additional_fees_set":null,"current_total_discounts":"0.00","current_total_discounts_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"current_total_duties_set":null,"current_total_price":"354.70","current_total_price_set":{"shop_money":{"amount":"354.70","currency_code":"USD"},"presentment_money":{"amount":"354.70","currency_code":"USD"}},"current_total_tax":"0.00","current_total_tax_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"customer_locale":null,"device_id":null,"discount_codes":[],"duties_included":false,"estimated_taxes":false,"financial_status":"paid","fulfillment_status":null,"landing_site":null,"landing_site_ref":null,"location_id":null,"merchant_business_entity_id":"MTYwNDQ2NzM2NDg5","merchant_of_record_app_id":null,"name":"#1027","note":null,"note_attributes":[],"number":27,"order_number":1027,"original_total_additional_fees_set":null,"original_total_duties_set":null,"payment_gateway_names":[""],"po_number":null,"presentment_currency":"USD","processed_at":"2024-10-12T17:44:45+02:00","reference":null,"referring_site":null,"source_identifier":null,"source_name":"168431550465","source_url":null,"subtotal_price":"354.70","subtotal_price_set":{"shop_money":{"amount":"354.70","currency_code":"USD"},"presentment_money":{"amount":"354.70","currency_code":"USD"}},"tags":"","tax_exempt":false,"tax_lines":[],"taxes_included":false,"test":false,"token":"7c829dfea92ee58c55f425e2947727dd","total_cash_rounding_payment_adjustment_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_cash_rounding_refund_adjustment_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_discounts":"0.00","total_discounts_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_line_items_price":"354.70","total_line_items_price_set":{"shop_money":{"amount":"354.70","currency_code":"USD"},"presentment_money":{"amount":"354.70","currency_code":"USD"}},"total_outstanding":"0.00","total_price":"354.70","total_price_set":{"shop_money":{"amount":"354.70","currency_code":"USD"},"presentment_money":{"amount":"354.70","currency_code":"USD"}},"total_shipping_price_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_tax":"0.00","total_tax_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_tip_received":"0.00","total_weight":0,"updated_at":"2024-10-12T17:44:45+02:00","user_id":null,"billing_address":null,"customer":{"id":7145222537321,"created_at":"2024-10-11T16:16:17+02:00","updated_at":"2024-10-12T17:44:45+02:00","state":"disabled","note":null,"verified_email":true,"multipass_identifier":null,"tax_exempt":false,"email_marketing_consent":{"state":"not_subscribed","opt_in_level":"single_opt_in","consent_updated_at":null},"sms_marketing_consent":null,"tags":"","currency":"USD","tax_exemptions":[],"admin_graphql_api_id":"gid:\/\/shopify\/Customer\/7145222537321","default_address":{"id":9346909765737,"customer_id":7145222537321,"company":null,"province":"Maryland","country":"United States","province_code":"MD","country_code":"US","country_name":"United States","default":true}},"discount_applications":[],"fulfillments":[],"line_items":[{"id":14949325209705,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14949325209705","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":113,"name":"VitaBisonXL","price":"42.50","price_set":{"shop_money":{"amount":"42.50","currency_code":"USD"},"presentment_money":{"amount":"42.50","currency_code":"USD"}},"product_exists":true,"product_id":7420513255529,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VOX4MALE","taxable":true,"title":"VitaBisonXL","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41879531094121,"variant_inventory_management":null,"variant_title":null,"vendor":"My Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14949325242473,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14949325242473","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":113,"name":"VitaBisonL","price":"48.60","price_set":{"shop_money":{"amount":"48.60","currency_code":"USD"},"presentment_money":{"amount":"48.60","currency_code":"USD"}},"product_exists":true,"product_id":7421971169385,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VOX4MALE","taxable":true,"title":"VitaBisonL","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41884283764841,"variant_inventory_management":null,"variant_title":null,"vendor":"Bison Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14949325275241,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14949325275241","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":113,"name":"VitaBisonM","price":"57.50","price_set":{"shop_money":{"amount":"57.50","currency_code":"USD"},"presentment_money":{"amount":"57.50","currency_code":"USD"}},"product_exists":true,"product_id":7421971038313,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VOX4MALE","taxable":true,"title":"VitaBisonM","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41884282978409,"variant_inventory_management":null,"variant_title":null,"vendor":"Bison Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14949325308009,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14949325308009","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":136,"name":"VitaBoostL","price":"48.60","price_set":{"shop_money":{"amount":"48.60","currency_code":"USD"},"presentment_money":{"amount":"48.60","currency_code":"USD"}},"product_exists":true,"product_id":7420513615977,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VTL4MUSH","taxable":true,"title":"VitaBoostL","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41879531454569,"variant_inventory_management":null,"variant_title":null,"vendor":"My Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14949325340777,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14949325340777","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":136,"name":"VitaBoostM","price":"57.50","price_set":{"shop_money":{"amount":"57.50","currency_code":"USD"},"presentment_money":{"amount":"57.50","currency_code":"USD"}},"product_exists":true,"product_id":7421971300457,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VTL4MUSH","taxable":true,"title":"VitaBoostM","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41884283895913,"variant_inventory_management":null,"variant_title":null,"vendor":"Bison Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14949325373545,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14949325373545","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":254,"name":"NeuroVitaXL","price":"42.50","price_set":{"shop_money":{"amount":"42.50","currency_code":"USD"},"presentment_money":{"amount":"42.50","currency_code":"USD"}},"product_exists":true,"product_id":7420513484905,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VOX4MULT","taxable":true,"title":"NeuroVitaXL","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41879531323497,"variant_inventory_management":null,"variant_title":null,"vendor":"My Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14949325406313,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14949325406313","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":254,"name":"VitaBisonM","price":"57.50","price_set":{"shop_money":{"amount":"57.50","currency_code":"USD"},"presentment_money":{"amount":"57.50","currency_code":"USD"}},"product_exists":true,"product_id":7421971398761,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VOX4MULT","taxable":true,"title":"VitaBisonM","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41884283994217,"variant_inventory_management":null,"variant_title":null,"vendor":"Bison Store","tax_lines":[],"duties":[],"discount_allocations":[]}],"payment_terms":null,"refunds":[],"shipping_address":{"province":"Maryland","country":"United States","country_code":"US","province_code":"MD"},"shipping_lines":[]}}
+[2024-10-13 07:22:40] Received data from Monobank:
+[2024-10-13 07:22:40] Array
+(
+    [invoiceId] => 241013ByRqBtTQZpeFYq
+    [status] => created
+    [amount] => 100
+    [ccy] => 980
+    [createdDate] => 2024-10-13T07:22:40Z
+    [modifiedDate] => 2024-10-13T07:22:40Z
+    [reference] => XL|Set|19148|2651 S Hutchinson St, apart 122|Philadelphia|PA|+102656454567|testXLvariant@test.com
+    [destination] => order4
+)
+
+[2024-10-13 07:22:40] Transaction failed or not successful.
+[2024-10-13 07:22:58] Received data from Monobank:
+[2024-10-13 07:22:58] Array
+(
+    [invoiceId] => 241013ByRqBtTQZpeFYq
+    [status] => processing
+    [amount] => 100
+    [ccy] => 980
+    [finalAmount] => 0
+    [createdDate] => 2024-10-13T07:22:40Z
+    [modifiedDate] => 2024-10-13T07:22:58Z
+    [reference] => XL|Set|19148|2651 S Hutchinson St, apart 122|Philadelphia|PA|+102656454567|testXLvariant@test.com
+    [destination] => order4
+)
+
+[2024-10-13 07:22:58] Transaction failed or not successful.
+[2024-10-13 07:23:33] Received data from Monobank:
+[2024-10-13 07:23:33] Array
+(
+    [invoiceId] => 241013ByRqBtTQZpeFYq
+    [status] => success
+    [payMethod] => pan
+    [amount] => 100
+    [ccy] => 980
+    [finalAmount] => 100
+    [createdDate] => 2024-10-13T07:22:40Z
+    [modifiedDate] => 2024-10-13T07:23:32Z
+    [reference] => XL|Set|19148|2651 S Hutchinson St, apart 122|Philadelphia|PA|+102656454567|testXLvariant@test.com
+    [destination] => order4
+    [paymentInfo] => Array
+        (
+            [rrn] => 036661782069
+            [approvalCode] => 286178
+            [tranId] => 15170500529
+            [terminal] => MI019788
+            [bank] => ПриватБанк
+            [paymentSystem] => visa
+            [country] => 804
+            [fee] => 1
+            [paymentMethod] => pan
+            [maskedPan] => 41496293******79
+        )
+
+)
+
+[2024-10-13 07:23:33] Transaction status: success
+[2024-10-13 07:23:33] Selected set: order4
+[2024-10-13 07:23:33] Final amount: 1
+[2024-10-13 07:23:33] Order data to Shopify:
+[2024-10-13 07:23:33] Array
+(
+    [order] => Array
+        (
+            [line_items] => Array
+                (
+                    [0] => Array
+                        (
+                            [title] => VitaBisonXL
+                            [variant_id] => 41879531094121
+                            [price] => 42.5
+                            [quantity] => 3
+                        )
+
+                    [1] => Array
+                        (
+                            [title] => VitaBisonXL
+                            [variant_id] => 41879531094121
+                            [price] => 42.5
+                            [quantity] => 2
+                        )
+
+                    [2] => Array
+                        (
+                            [title] => NeuroVitaXL
+                            [variant_id] => 41879531323497
+                            [price] => 42.5
+                            [quantity] => 1
+                        )
+
+                )
+
+            [transactions] => Array
+                (
+                    [0] => Array
+                        (
+                            [kind] => sale
+                            [status] => success
+                            [amount] => 255
+                        )
+
+                )
+
+            [total_tax] => 0
+            [currency] => USD
+            [email] => testXLvariant@test.com
+            [shipping_address] => Array
+                (
+                    [first_name] => XL
+                    [last_name] => Set
+                    [address1] => 2651 S Hutchinson St, apart 122
+                    [city] => Philadelphia
+                    [province] => PA
+                    [zip] => 19148
+                    [phone] => +102656454567
+                    [country] => United States
+                    [province_code] => PA
+                    [country_code] => US
+                )
+
+        )
+
+)
+
+[2024-10-13 07:23:34] Shopify API response:
+[2024-10-13 07:23:34] {"order":{"id":6233368264809,"admin_graphql_api_id":"gid:\/\/shopify\/Order\/6233368264809","app_id":168431550465,"browser_ip":null,"buyer_accepts_marketing":false,"cancel_reason":null,"cancelled_at":null,"cart_token":null,"checkout_id":null,"checkout_token":null,"client_details":null,"closed_at":null,"confirmation_number":"GPFAIUDVG","confirmed":true,"created_at":"2024-10-13T09:23:33+02:00","currency":"USD","current_subtotal_price":"255.00","current_subtotal_price_set":{"shop_money":{"amount":"255.00","currency_code":"USD"},"presentment_money":{"amount":"255.00","currency_code":"USD"}},"current_total_additional_fees_set":null,"current_total_discounts":"0.00","current_total_discounts_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"current_total_duties_set":null,"current_total_price":"255.00","current_total_price_set":{"shop_money":{"amount":"255.00","currency_code":"USD"},"presentment_money":{"amount":"255.00","currency_code":"USD"}},"current_total_tax":"0.00","current_total_tax_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"customer_locale":null,"device_id":null,"discount_codes":[],"duties_included":false,"estimated_taxes":false,"financial_status":"paid","fulfillment_status":null,"landing_site":null,"landing_site_ref":null,"location_id":null,"merchant_business_entity_id":"MTYwNDQ2NzM2NDg5","merchant_of_record_app_id":null,"name":"#1028","note":null,"note_attributes":[],"number":28,"order_number":1028,"original_total_additional_fees_set":null,"original_total_duties_set":null,"payment_gateway_names":[""],"po_number":null,"presentment_currency":"USD","processed_at":"2024-10-13T09:23:33+02:00","reference":null,"referring_site":null,"source_identifier":null,"source_name":"168431550465","source_url":null,"subtotal_price":"255.00","subtotal_price_set":{"shop_money":{"amount":"255.00","currency_code":"USD"},"presentment_money":{"amount":"255.00","currency_code":"USD"}},"tags":"","tax_exempt":false,"tax_lines":[],"taxes_included":false,"test":false,"token":"faaa749b064da6f1b42e2e2117a33251","total_cash_rounding_payment_adjustment_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_cash_rounding_refund_adjustment_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_discounts":"0.00","total_discounts_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_line_items_price":"255.00","total_line_items_price_set":{"shop_money":{"amount":"255.00","currency_code":"USD"},"presentment_money":{"amount":"255.00","currency_code":"USD"}},"total_outstanding":"0.00","total_price":"255.00","total_price_set":{"shop_money":{"amount":"255.00","currency_code":"USD"},"presentment_money":{"amount":"255.00","currency_code":"USD"}},"total_shipping_price_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_tax":"0.00","total_tax_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_tip_received":"0.00","total_weight":0,"updated_at":"2024-10-13T09:23:33+02:00","user_id":null,"billing_address":null,"customer":{"id":7152944808041,"created_at":"2024-10-13T09:23:33+02:00","updated_at":"2024-10-13T09:23:34+02:00","state":"disabled","note":null,"verified_email":true,"multipass_identifier":null,"tax_exempt":false,"email_marketing_consent":{"state":"not_subscribed","opt_in_level":"single_opt_in","consent_updated_at":null},"sms_marketing_consent":null,"tags":"","currency":"USD","tax_exemptions":[],"admin_graphql_api_id":"gid:\/\/shopify\/Customer\/7152944808041","default_address":{"id":9351512326249,"customer_id":7152944808041,"company":null,"province":"Pennsylvania","country":"United States","province_code":"PA","country_code":"US","country_name":"United States","default":true}},"discount_applications":[],"fulfillments":[],"line_items":[{"id":14951290896489,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14951290896489","attributed_staffs":[],"current_quantity":3,"fulfillable_quantity":3,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":113,"name":"VitaBisonXL","price":"42.50","price_set":{"shop_money":{"amount":"42.50","currency_code":"USD"},"presentment_money":{"amount":"42.50","currency_code":"USD"}},"product_exists":true,"product_id":7420513255529,"properties":[],"quantity":3,"requires_shipping":true,"sku":"VOX4MALE","taxable":true,"title":"VitaBisonXL","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41879531094121,"variant_inventory_management":null,"variant_title":null,"vendor":"My Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14951290929257,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14951290929257","attributed_staffs":[],"current_quantity":2,"fulfillable_quantity":2,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":113,"name":"VitaBisonXL","price":"42.50","price_set":{"shop_money":{"amount":"42.50","currency_code":"USD"},"presentment_money":{"amount":"42.50","currency_code":"USD"}},"product_exists":true,"product_id":7420513255529,"properties":[],"quantity":2,"requires_shipping":true,"sku":"VOX4MALE","taxable":true,"title":"VitaBisonXL","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41879531094121,"variant_inventory_management":null,"variant_title":null,"vendor":"My Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14951290962025,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14951290962025","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":254,"name":"NeuroVitaXL","price":"42.50","price_set":{"shop_money":{"amount":"42.50","currency_code":"USD"},"presentment_money":{"amount":"42.50","currency_code":"USD"}},"product_exists":true,"product_id":7420513484905,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VOX4MULT","taxable":true,"title":"NeuroVitaXL","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41879531323497,"variant_inventory_management":null,"variant_title":null,"vendor":"My Store","tax_lines":[],"duties":[],"discount_allocations":[]}],"payment_terms":null,"refunds":[],"shipping_address":{"province":"Pennsylvania","country":"United States","country_code":"US","province_code":"PA"},"shipping_lines":[]}}
+[2024-10-13 07:33:42] Received data from Monobank:
+[2024-10-13 07:33:42] Array
+(
+    [invoiceId] => 241013Fg5WQhz7YV1Nj
+    [status] => created
+    [amount] => 24300
+    [ccy] => 840
+    [createdDate] => 2024-10-13T07:33:42Z
+    [modifiedDate] => 2024-10-13T07:33:42Z
+    [reference] => |||||||
+    [destination] => order2
+)
+
+[2024-10-13 07:33:42] Transaction failed or not successful.
+[2024-10-13 07:40:45] Received data from Monobank:
+[2024-10-13 07:40:45] Array
+(
+    [invoiceId] => 241013jQV7PUW49EkSL
+    [status] => created
+    [amount] => 100
+    [ccy] => 980
+    [createdDate] => 2024-10-13T07:40:45Z
+    [modifiedDate] => 2024-10-13T07:40:45Z
+    [reference] => SET|Lsize|11225|1207 Carroll St|Brooklyn|NY|+102656454566|testLvariant@test.com
+    [destination] => order4
+)
+
+[2024-10-13 07:40:45] Transaction failed or not successful.
+[2024-10-13 07:45:38] Received data from Monobank:
+[2024-10-13 07:45:38] Array
+(
+    [invoiceId] => 241013jQV7PUW49EkSL
+    [status] => processing
+    [amount] => 100
+    [ccy] => 980
+    [finalAmount] => 0
+    [createdDate] => 2024-10-13T07:40:45Z
+    [modifiedDate] => 2024-10-13T07:45:38Z
+    [reference] => SET|Lsize|11225|1207 Carroll St|Brooklyn|NY|+102656454566|testLvariant@test.com
+    [destination] => order4
+)
+
+[2024-10-13 07:45:38] Transaction failed or not successful.
+[2024-10-13 07:47:18] Received data from Monobank:
+[2024-10-13 07:47:18] Array
+(
+    [invoiceId] => 2410132ZHg4NWi4JbCdZ
+    [status] => created
+    [amount] => 100
+    [ccy] => 980
+    [createdDate] => 2024-10-13T07:47:17Z
+    [modifiedDate] => 2024-10-13T07:47:17Z
+    [reference] => SET|Lsize|11225|1207 Carroll St|Brooklyn|NY|+102656454566|testLvariant@test.com
+    [destination] => order4
+)
+
+[2024-10-13 07:47:18] Transaction failed or not successful.
+[2024-10-13 07:47:37] Received data from Monobank:
+[2024-10-13 07:47:37] Array
+(
+    [invoiceId] => 2410132ZHg4NWi4JbCdZ
+    [status] => processing
+    [amount] => 100
+    [ccy] => 980
+    [finalAmount] => 0
+    [createdDate] => 2024-10-13T07:47:17Z
+    [modifiedDate] => 2024-10-13T07:47:36Z
+    [reference] => SET|Lsize|11225|1207 Carroll St|Brooklyn|NY|+102656454566|testLvariant@test.com
+    [destination] => order4
+)
+
+[2024-10-13 07:47:37] Transaction failed or not successful.
+[2024-10-13 07:48:16] Received data from Monobank:
+[2024-10-13 07:48:16] Array
+(
+    [invoiceId] => 2410132ZHg4NWi4JbCdZ
+    [status] => success
+    [payMethod] => pan
+    [amount] => 100
+    [ccy] => 980
+    [finalAmount] => 100
+    [createdDate] => 2024-10-13T07:47:17Z
+    [modifiedDate] => 2024-10-13T07:48:16Z
+    [reference] => SET|Lsize|11225|1207 Carroll St|Brooklyn|NY|+102656454566|testLvariant@test.com
+    [destination] => order4
+    [paymentInfo] => Array
+        (
+            [rrn] => 036676571011
+            [approvalCode] => 357183
+            [tranId] => 15170744271
+            [terminal] => MI019788
+            [bank] => ПриватБанк
+            [paymentSystem] => visa
+            [country] => 804
+            [fee] => 1
+            [paymentMethod] => pan
+            [maskedPan] => 41496293******79
+        )
+
+)
+
+[2024-10-13 07:48:16] Transaction status: success
+[2024-10-13 07:48:16] Selected set: order4
+[2024-10-13 07:48:16] Final amount: 1
+[2024-10-13 07:48:16] Order data to Shopify:
+[2024-10-13 07:48:16] Array
+(
+    [order] => Array
+        (
+            [line_items] => Array
+                (
+                    [0] => Array
+                        (
+                            [title] => VitaBisonL
+                            [variant_id] => 41884283764841
+                            [price] => 48.6
+                            [quantity] => 2
+                        )
+
+                    [1] => Array
+                        (
+                            [title] => VitaBisonL
+                            [variant_id] => 41884283764841
+                            [price] => 48.6
+                            [quantity] => 2
+                        )
+
+                    [2] => Array
+                        (
+                            [title] => VitaBoostL
+                            [variant_id] => 41879531454569
+                            [price] => 48.6
+                            [quantity] => 1
+                        )
+
+                )
+
+            [transactions] => Array
+                (
+                    [0] => Array
+                        (
+                            [kind] => sale
+                            [status] => success
+                            [amount] => 243
+                        )
+
+                )
+
+            [total_tax] => 0
+            [currency] => USD
+            [email] => testLvariant@test.com
+            [shipping_address] => Array
+                (
+                    [first_name] => SET
+                    [last_name] => Lsize
+                    [address1] => 1207 Carroll St
+                    [city] => Brooklyn
+                    [province] => NY
+                    [zip] => 11225
+                    [phone] => +102656454566
+                    [country] => United States
+                    [province_code] => NY
+                    [country_code] => US
+                )
+
+        )
+
+)
+
+[2024-10-13 07:48:17] Shopify API response:
+[2024-10-13 07:48:17] {"order":{"id":6233437962345,"admin_graphql_api_id":"gid:\/\/shopify\/Order\/6233437962345","app_id":168431550465,"browser_ip":null,"buyer_accepts_marketing":false,"cancel_reason":null,"cancelled_at":null,"cart_token":null,"checkout_id":null,"checkout_token":null,"client_details":null,"closed_at":null,"confirmation_number":"Z9CRFL558","confirmed":true,"created_at":"2024-10-13T09:48:16+02:00","currency":"USD","current_subtotal_price":"243.00","current_subtotal_price_set":{"shop_money":{"amount":"243.00","currency_code":"USD"},"presentment_money":{"amount":"243.00","currency_code":"USD"}},"current_total_additional_fees_set":null,"current_total_discounts":"0.00","current_total_discounts_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"current_total_duties_set":null,"current_total_price":"243.00","current_total_price_set":{"shop_money":{"amount":"243.00","currency_code":"USD"},"presentment_money":{"amount":"243.00","currency_code":"USD"}},"current_total_tax":"0.00","current_total_tax_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"customer_locale":null,"device_id":null,"discount_codes":[],"duties_included":false,"estimated_taxes":false,"financial_status":"paid","fulfillment_status":null,"landing_site":null,"landing_site_ref":null,"location_id":null,"merchant_business_entity_id":"MTYwNDQ2NzM2NDg5","merchant_of_record_app_id":null,"name":"#1029","note":null,"note_attributes":[],"number":29,"order_number":1029,"original_total_additional_fees_set":null,"original_total_duties_set":null,"payment_gateway_names":[""],"po_number":null,"presentment_currency":"USD","processed_at":"2024-10-13T09:48:16+02:00","reference":null,"referring_site":null,"source_identifier":null,"source_name":"168431550465","source_url":null,"subtotal_price":"243.00","subtotal_price_set":{"shop_money":{"amount":"243.00","currency_code":"USD"},"presentment_money":{"amount":"243.00","currency_code":"USD"}},"tags":"","tax_exempt":false,"tax_lines":[],"taxes_included":false,"test":false,"token":"97ae8fc1caa2e8b9d4235f4cf8387d57","total_cash_rounding_payment_adjustment_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_cash_rounding_refund_adjustment_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_discounts":"0.00","total_discounts_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_line_items_price":"243.00","total_line_items_price_set":{"shop_money":{"amount":"243.00","currency_code":"USD"},"presentment_money":{"amount":"243.00","currency_code":"USD"}},"total_outstanding":"0.00","total_price":"243.00","total_price_set":{"shop_money":{"amount":"243.00","currency_code":"USD"},"presentment_money":{"amount":"243.00","currency_code":"USD"}},"total_shipping_price_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_tax":"0.00","total_tax_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_tip_received":"0.00","total_weight":0,"updated_at":"2024-10-13T09:48:16+02:00","user_id":null,"billing_address":null,"customer":{"id":7153016569961,"created_at":"2024-10-13T09:48:16+02:00","updated_at":"2024-10-13T09:48:17+02:00","state":"disabled","note":null,"verified_email":true,"multipass_identifier":null,"tax_exempt":false,"email_marketing_consent":{"state":"not_subscribed","opt_in_level":"single_opt_in","consent_updated_at":null},"sms_marketing_consent":null,"tags":"","currency":"USD","tax_exemptions":[],"admin_graphql_api_id":"gid:\/\/shopify\/Customer\/7153016569961","default_address":{"id":9351547322473,"customer_id":7153016569961,"company":null,"province":"New York","country":"United States","province_code":"NY","country_code":"US","country_name":"United States","default":true}},"discount_applications":[],"fulfillments":[],"line_items":[{"id":14951376748649,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14951376748649","attributed_staffs":[],"current_quantity":2,"fulfillable_quantity":2,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":113,"name":"VitaBisonL","price":"48.60","price_set":{"shop_money":{"amount":"48.60","currency_code":"USD"},"presentment_money":{"amount":"48.60","currency_code":"USD"}},"product_exists":true,"product_id":7421971169385,"properties":[],"quantity":2,"requires_shipping":true,"sku":"VOX4MALE","taxable":true,"title":"VitaBisonL","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41884283764841,"variant_inventory_management":null,"variant_title":null,"vendor":"Bison Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14951376781417,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14951376781417","attributed_staffs":[],"current_quantity":2,"fulfillable_quantity":2,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":113,"name":"VitaBisonL","price":"48.60","price_set":{"shop_money":{"amount":"48.60","currency_code":"USD"},"presentment_money":{"amount":"48.60","currency_code":"USD"}},"product_exists":true,"product_id":7421971169385,"properties":[],"quantity":2,"requires_shipping":true,"sku":"VOX4MALE","taxable":true,"title":"VitaBisonL","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41884283764841,"variant_inventory_management":null,"variant_title":null,"vendor":"Bison Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14951376814185,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14951376814185","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":136,"name":"VitaBoostL","price":"48.60","price_set":{"shop_money":{"amount":"48.60","currency_code":"USD"},"presentment_money":{"amount":"48.60","currency_code":"USD"}},"product_exists":true,"product_id":7420513615977,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VTL4MUSH","taxable":true,"title":"VitaBoostL","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41879531454569,"variant_inventory_management":null,"variant_title":null,"vendor":"My Store","tax_lines":[],"duties":[],"discount_allocations":[]}],"payment_terms":null,"refunds":[],"shipping_address":{"province":"New York","country":"United States","country_code":"US","province_code":"NY"},"shipping_lines":[]}}
+[2024-10-13 07:54:11] Received data from Monobank:
+[2024-10-13 07:54:11] Array
+(
+    [invoiceId] => 241013DBmf7Jt8Ubw5Aq
+    [status] => created
+    [amount] => 100
+    [ccy] => 980
+    [createdDate] => 2024-10-13T07:54:10Z
+    [modifiedDate] => 2024-10-13T07:54:10Z
+    [reference] => SET|Msize|94080|464 Miller Ave|South San Francisco|CA|+102656454564|testMvariant@test.com
+    [destination] => order4
+)
+
+[2024-10-13 07:54:11] Transaction failed or not successful.
+[2024-10-13 07:54:32] Received data from Monobank:
+[2024-10-13 07:54:32] Array
+(
+    [invoiceId] => 241013DBmf7Jt8Ubw5Aq
+    [status] => processing
+    [amount] => 100
+    [ccy] => 980
+    [finalAmount] => 0
+    [createdDate] => 2024-10-13T07:54:10Z
+    [modifiedDate] => 2024-10-13T07:54:32Z
+    [reference] => SET|Msize|94080|464 Miller Ave|South San Francisco|CA|+102656454564|testMvariant@test.com
+    [destination] => order4
+)
+
+[2024-10-13 07:54:32] Transaction failed or not successful.
+[2024-10-13 07:55:13] Received data from Monobank:
+[2024-10-13 07:55:13] Array
+(
+    [invoiceId] => 241013DBmf7Jt8Ubw5Aq
+    [status] => success
+    [payMethod] => pan
+    [amount] => 100
+    [ccy] => 980
+    [finalAmount] => 100
+    [createdDate] => 2024-10-13T07:54:10Z
+    [modifiedDate] => 2024-10-13T07:55:13Z
+    [reference] => SET|Msize|94080|464 Miller Ave|South San Francisco|CA|+102656454564|testMvariant@test.com
+    [destination] => order4
+    [paymentInfo] => Array
+        (
+            [rrn] => 036680722049
+            [approvalCode] => 805187
+            [tranId] => 15170816215
+            [terminal] => MI019788
+            [bank] => ПриватБанк
+            [paymentSystem] => visa
+            [country] => 804
+            [fee] => 1
+            [paymentMethod] => pan
+            [maskedPan] => 41496293******79
+        )
+
+)
+
+[2024-10-13 07:55:13] Transaction status: success
+[2024-10-13 07:55:13] Selected set: order4
+[2024-10-13 07:55:13] Final amount: 1
+[2024-10-13 07:55:13] Order data to Shopify:
+[2024-10-13 07:55:13] Array
+(
+    [order] => Array
+        (
+            [line_items] => Array
+                (
+                    [0] => Array
+                        (
+                            [title] => VitaBisonM
+                            [variant_id] => 41884282978409
+                            [price] => 57.5
+                            [quantity] => 2
+                        )
+
+                    [1] => Array
+                        (
+                            [title] => VitaBoostM
+                            [variant_id] => 41884283895913
+                            [price] => 57.5
+                            [quantity] => 1
+                        )
+
+                    [2] => Array
+                        (
+                            [title] => NeuroVitaM
+                            [variant_id] => 41884283994217
+                            [price] => 57.5
+                            [quantity] => 1
+                        )
+
+                )
+
+            [transactions] => Array
+                (
+                    [0] => Array
+                        (
+                            [kind] => sale
+                            [status] => success
+                            [amount] => 230
+                        )
+
+                )
+
+            [total_tax] => 0
+            [currency] => USD
+            [email] => testMvariant@test.com
+            [shipping_address] => Array
+                (
+                    [first_name] => SET
+                    [last_name] => Msize
+                    [address1] => 464 Miller Ave
+                    [city] => South San Francisco
+                    [province] => CA
+                    [zip] => 94080
+                    [phone] => +102656454564
+                    [country] => United States
+                    [province_code] => CA
+                    [country_code] => US
+                )
+
+        )
+
+)
+
+[2024-10-13 07:55:14] Shopify API response:
+[2024-10-13 07:55:14] {"order":{"id":6233439797353,"admin_graphql_api_id":"gid:\/\/shopify\/Order\/6233439797353","app_id":168431550465,"browser_ip":null,"buyer_accepts_marketing":false,"cancel_reason":null,"cancelled_at":null,"cart_token":null,"checkout_id":null,"checkout_token":null,"client_details":null,"closed_at":null,"confirmation_number":"TNF5XUZGR","confirmed":true,"created_at":"2024-10-13T09:55:13+02:00","currency":"USD","current_subtotal_price":"230.00","current_subtotal_price_set":{"shop_money":{"amount":"230.00","currency_code":"USD"},"presentment_money":{"amount":"230.00","currency_code":"USD"}},"current_total_additional_fees_set":null,"current_total_discounts":"0.00","current_total_discounts_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"current_total_duties_set":null,"current_total_price":"230.00","current_total_price_set":{"shop_money":{"amount":"230.00","currency_code":"USD"},"presentment_money":{"amount":"230.00","currency_code":"USD"}},"current_total_tax":"0.00","current_total_tax_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"customer_locale":null,"device_id":null,"discount_codes":[],"duties_included":false,"estimated_taxes":false,"financial_status":"paid","fulfillment_status":null,"landing_site":null,"landing_site_ref":null,"location_id":null,"merchant_business_entity_id":"MTYwNDQ2NzM2NDg5","merchant_of_record_app_id":null,"name":"#1030","note":null,"note_attributes":[],"number":30,"order_number":1030,"original_total_additional_fees_set":null,"original_total_duties_set":null,"payment_gateway_names":[""],"po_number":null,"presentment_currency":"USD","processed_at":"2024-10-13T09:55:13+02:00","reference":null,"referring_site":null,"source_identifier":null,"source_name":"168431550465","source_url":null,"subtotal_price":"230.00","subtotal_price_set":{"shop_money":{"amount":"230.00","currency_code":"USD"},"presentment_money":{"amount":"230.00","currency_code":"USD"}},"tags":"","tax_exempt":false,"tax_lines":[],"taxes_included":false,"test":false,"token":"85ce666ac5b4cac5d220219978374000","total_cash_rounding_payment_adjustment_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_cash_rounding_refund_adjustment_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_discounts":"0.00","total_discounts_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_line_items_price":"230.00","total_line_items_price_set":{"shop_money":{"amount":"230.00","currency_code":"USD"},"presentment_money":{"amount":"230.00","currency_code":"USD"}},"total_outstanding":"0.00","total_price":"230.00","total_price_set":{"shop_money":{"amount":"230.00","currency_code":"USD"},"presentment_money":{"amount":"230.00","currency_code":"USD"}},"total_shipping_price_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_tax":"0.00","total_tax_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"total_tip_received":"0.00","total_weight":0,"updated_at":"2024-10-13T09:55:14+02:00","user_id":null,"billing_address":null,"customer":{"id":7153039310953,"created_at":"2024-10-13T09:55:13+02:00","updated_at":"2024-10-13T09:55:14+02:00","state":"disabled","note":null,"verified_email":true,"multipass_identifier":null,"tax_exempt":false,"email_marketing_consent":{"state":"not_subscribed","opt_in_level":"single_opt_in","consent_updated_at":null},"sms_marketing_consent":null,"tags":"","currency":"USD","tax_exemptions":[],"admin_graphql_api_id":"gid:\/\/shopify\/Customer\/7153039310953","default_address":{"id":9351555809385,"customer_id":7153039310953,"company":null,"province":"California","country":"United States","province_code":"CA","country_code":"US","country_name":"United States","default":true}},"discount_applications":[],"fulfillments":[],"line_items":[{"id":14951379533929,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14951379533929","attributed_staffs":[],"current_quantity":2,"fulfillable_quantity":2,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":113,"name":"VitaBisonM","price":"57.50","price_set":{"shop_money":{"amount":"57.50","currency_code":"USD"},"presentment_money":{"amount":"57.50","currency_code":"USD"}},"product_exists":true,"product_id":7421971038313,"properties":[],"quantity":2,"requires_shipping":true,"sku":"VOX4MALE","taxable":true,"title":"VitaBisonM","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41884282978409,"variant_inventory_management":null,"variant_title":null,"vendor":"Bison Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14951379566697,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14951379566697","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":136,"name":"VitaBoostM","price":"57.50","price_set":{"shop_money":{"amount":"57.50","currency_code":"USD"},"presentment_money":{"amount":"57.50","currency_code":"USD"}},"product_exists":true,"product_id":7421971300457,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VTL4MUSH","taxable":true,"title":"VitaBoostM","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41884283895913,"variant_inventory_management":null,"variant_title":null,"vendor":"Bison Store","tax_lines":[],"duties":[],"discount_allocations":[]},{"id":14951379599465,"admin_graphql_api_id":"gid:\/\/shopify\/LineItem\/14951379599465","attributed_staffs":[],"current_quantity":1,"fulfillable_quantity":1,"fulfillment_service":"supliful-fulfillment","fulfillment_status":null,"gift_card":false,"grams":254,"name":"NeuroVitaM","price":"57.50","price_set":{"shop_money":{"amount":"57.50","currency_code":"USD"},"presentment_money":{"amount":"57.50","currency_code":"USD"}},"product_exists":true,"product_id":7421971398761,"properties":[],"quantity":1,"requires_shipping":true,"sku":"VOX4MULT","taxable":true,"title":"NeuroVitaM","total_discount":"0.00","total_discount_set":{"shop_money":{"amount":"0.00","currency_code":"USD"},"presentment_money":{"amount":"0.00","currency_code":"USD"}},"variant_id":41884283994217,"variant_inventory_management":null,"variant_title":null,"vendor":"Bison Store","tax_lines":[],"duties":[],"discount_allocations":[]}],"payment_terms":null,"refunds":[],"shipping_address":{"province":"California","country":"United States","country_code":"US","province_code":"CA"},"shipping_lines":[]}}

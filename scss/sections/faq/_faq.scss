@@ -67,6 +67,7 @@
     color: var(--white, #fffcf9);
     font-family: 'Roboto Condensed';
     line-height: 24px;
+    transition: 0.6s all linear;
   }
 
   .faq__question.active .faq__answer {
