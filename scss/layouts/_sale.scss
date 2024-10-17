@@ -15,6 +15,9 @@
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
 
+  // display: flex;
+  // opacity: 1;
+
   &.show {
     display: flex;
     opacity: 1;
@@ -26,10 +29,10 @@
   }
 
   &__img {
-    height: 100%;
+    height: 88px;
 
     img {
-      height: 100%;
+      height: 88px;
       object-fit: contain;
     }
   }

@@ -70,6 +70,7 @@ html.no-scroll {
 }
 
 body {
+  position: relative;
   font-weight: 400;
   font-size: 16px;
   font-family: "Roboto Condensed";
@@ -2575,10 +2576,10 @@ body.no-scroll {
   animation: slideOut 0.5s forwards;
 }
 .sale__img {
-  height: 100%;
+  height: 88px;
 }
 .sale__img img {
-  height: 100%;
+  height: 88px;
   object-fit: contain;
 }
 .sale__text {
