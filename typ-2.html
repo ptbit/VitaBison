@@ -37,43 +37,33 @@
         a.appendChild(r);
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-    <!-- FB PIXEL -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        'script',
-        'https://connect.facebook.net/en_US/fbevents.js'
-      );
-      fbq('init', '#sub3#');
-      fbq('track', 'Lead');
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=#sub3#&ev=Lead&noscript=1%22"
-    /></noscript>
   </head>
   <body>
+    <script>
+      const sub1 = sessionStorage.getItem('sub1');
+      const sub2 = sessionStorage.getItem('sub2');
+      const sub3 = sessionStorage.getItem('sub3');
+      const orderId = sub1;
+      const country = 'US';
+
+      if (sub1 && sub2 && orderId) {
+        const postbackUrl = `https://system.trackerlead.biz/postback/nutrabase?key=yyaF4u76h4eu&internalId=${sub1}&externalId=${orderId}&sub2=${sub2}&country=${country}`;
+
+        fetch(postbackUrl)
+          .then((response) => {
+            if (response.ok) {
+              console.log('Постбек-запит успішно відправлено');
+            } else {
+              console.log('Помилка при надсиланні постбек-запиту');
+            }
+          })
+          .catch((error) => {
+            console.log('Помилка з’єднання:', error);
+          });
+      } else {
+        console.log('Не вистачає даних для відправки постбек-запиту');
+      }
+    </script>
     <main class="main">
       <section class="hero">
         <div class="bg__top"></div>

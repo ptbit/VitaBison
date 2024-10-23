@@ -192,8 +192,6 @@ if (isset($data['status']) && $data['status'] === 'success') {
     }
 
     curl_close($ch);
-    ///
-
   }
 } else {
   logData("Transaction failed or not successful.");
