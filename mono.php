@@ -16,8 +16,8 @@ function logData($data)
 logData("Received data from mono.js:");
 logData($data);
 
-// Додаємо redirectUrl та webHookUrl до запиту до Monobank
-$data['redirectUrl'] = 'https://vitabisfresh.tech/typ.html';
+// Додаємо redirectUrl та webHookUrl до запиту до Monobank 
+$data['redirectUrl'] = 'https://vitabisfresh.tech/typ-'.$data['set'].'.html';
 $data['webHookUrl'] = 'https://vitabisfresh.tech/mono-hook.php';
 
 // Перевіряємо чи існує merchantPaymInfo

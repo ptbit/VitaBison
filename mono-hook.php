@@ -133,33 +133,33 @@ if (isset($data['status']) && $data['status'] === 'success') {
       ];
       break;
       // -------------------------------------------------------- TEST ORDER --------------------------------------------------------
-    // case 'order4':
-    //   $orderData = [
-    //     "order" => [
-    //       "line_items" => [
-    //         ["title" => "VitaBisonM", "variant_id" => 41884282978409, "price" => 57.50, "quantity" => 2],
-    //         ["title" => "VitaBoostM", "variant_id" => 41884283895913, "price" => 57.50, "quantity" => 1],
-    //         ["title" => "NeuroVitaM", "variant_id" => 41884283994217, "price" => 57.50, "quantity" => 1]
-    //       ],
-    //       "transactions" => [["kind" => "sale", "status" => "success", "amount" => 230.00]],
-    //       "total_tax" => 0.00,
-    //       "currency" => "USD",
-    //       "email" => $email,
-    //       "shipping_address" => [
-    //         "first_name" => $firstName,
-    //         "last_name" => $lastName,
-    //         "address1" => $address,
-    //         "city" => $city,
-    //         "province" => $state,
-    //         "zip" => $zipcode,
-    //         "phone" => $phone,
-    //         "country" => "United States",
-    //         "province_code" => $state,
-    //         "country_code" => "US"
-    //       ]
-    //     ]
-    //   ];
-    //   break;
+      // case 'order4':
+      //   $orderData = [
+      //     "order" => [
+      //       "line_items" => [
+      //         ["title" => "VitaBisonM", "variant_id" => 41884282978409, "price" => 57.50, "quantity" => 2],
+      //         ["title" => "VitaBoostM", "variant_id" => 41884283895913, "price" => 57.50, "quantity" => 1],
+      //         ["title" => "NeuroVitaM", "variant_id" => 41884283994217, "price" => 57.50, "quantity" => 1]
+      //       ],
+      //       "transactions" => [["kind" => "sale", "status" => "success", "amount" => 230.00]],
+      //       "total_tax" => 0.00,
+      //       "currency" => "USD",
+      //       "email" => $email,
+      //       "shipping_address" => [
+      //         "first_name" => $firstName,
+      //         "last_name" => $lastName,
+      //         "address1" => $address,
+      //         "city" => $city,
+      //         "province" => $state,
+      //         "zip" => $zipcode,
+      //         "phone" => $phone,
+      //         "country" => "United States",
+      //         "province_code" => $state,
+      //         "country_code" => "US"
+      //       ]
+      //     ]
+      //   ];
+      //   break;
     default:
       logData("Unknown set selected: " . $set);
       exit;
@@ -192,6 +192,8 @@ if (isset($data['status']) && $data['status'] === 'success') {
     }
 
     curl_close($ch);
+    ///
+
   }
 } else {
   logData("Transaction failed or not successful.");

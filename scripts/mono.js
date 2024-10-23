@@ -234,9 +234,9 @@ async function sendData(SET, userData) {
     const json = await response.json();
     // console.log(json);
     const goToUrl = json.pageUrl;
+
     window.location.href = goToUrl;
   } catch (error) {
     console.error(error.message);
   }
 }
-
