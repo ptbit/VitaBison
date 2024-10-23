@@ -43,12 +43,12 @@
       const sub1 = sessionStorage.getItem('sub1');
       const sub2 = sessionStorage.getItem('sub2');
       const sub3 = sessionStorage.getItem('sub3');
-      const orderId = sub1; 
+      const orderId = sub1;
       const country = 'US';
 
       if (sub1 && sub2 && orderId) {
         const postbackUrl = `https://system.trackerlead.biz/postback/nutrabase?key=yyaF4u76h4eu&internalId=${sub1}&externalId=${orderId}&sub2=${sub2}&country=${country}`;
-
+        console.log(postbackUrl);
         fetch(postbackUrl)
           .then((response) => {
             if (response.ok) {

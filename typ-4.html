@@ -48,7 +48,7 @@
 
       if (sub1 && sub2 && orderId) {
         const postbackUrl = `https://system.trackerlead.biz/postback/nutrabase?key=yyaF4u76h4eu&internalId=${sub1}&externalId=${orderId}&sub2=${sub2}&country=${country}`;
-
+        console.log(postbackUrl);
         fetch(postbackUrl)
           .then((response) => {
             if (response.ok) {

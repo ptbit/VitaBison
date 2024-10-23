@@ -120,11 +120,19 @@
       const sub2 = urlParams.get('sub2');
       const sub3 = urlParams.get('sub3');
       const sub4 = urlParams.get('sub4');
-
-      sessionStorage.setItem('sub1', sub1);
-      sessionStorage.setItem('sub2', sub2);
-      sessionStorage.setItem('sub3', sub3);
-      sessionStorage.setItem('sub4', sub4);
+      
+      if (sub1) {
+        sessionStorage.setItem('sub1', sub1);
+      }
+      if (sub2) {
+        sessionStorage.setItem('sub2', sub2);
+      }
+      if (sub3) {
+        sessionStorage.setItem('sub3', sub3);
+      }
+      if (sub4) {
+        sessionStorage.setItem('sub4', sub4);
+      }
 
       if (sub3) {
         !(function (f, b, e, v, n, t, s) {
