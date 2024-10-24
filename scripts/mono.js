@@ -1,6 +1,6 @@
 const bodyVariants = [
   {
-    amount: 25500,
+    amount: 26400,
     ccy: 840,
     merchantPaymInfo: {
       reference: 'order-set-1',
@@ -48,7 +48,7 @@ const bodyVariants = [
     paymentType: 'debit',
   },
   {
-    amount: 24300,
+    amount: 25500,
     ccy: 840,
     merchantPaymInfo: {
       reference: 'order-set-2',
@@ -96,7 +96,7 @@ const bodyVariants = [
     paymentType: 'debit',
   },
   {
-    amount: 23000,
+    amount: 24000,
     ccy: 840,
     merchantPaymInfo: {
       reference: 'order-set-3',
@@ -143,32 +143,32 @@ const bodyVariants = [
     validity: 3600,
     paymentType: 'debit',
   },
-  {
-    amount: 100,
-    ccy: 980,
-    merchantPaymInfo: {
-      reference: 'test-order-set',
-      destination: 'only for test',
-      comment: '',
-      customerEmails: [],
+  // {
+  //   amount: 100,
+  //   ccy: 980,
+  //   merchantPaymInfo: {
+  //     reference: 'test-order-set',
+  //     destination: 'only for test',
+  //     comment: '',
+  //     customerEmails: [],
 
-      basketOrder: [
-        {
-          name: 'VitaBison',
-          qty: 1,
-          sum: 100,
-          total: 100,
-          icon: 'https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png',
-          unit: 'pcs',
-          code: 'VitaBison-1',
-          header: 'VitaBison header',
-          footer: 'VitaBison footer',
-        },
-      ],
-    },
-    validity: 3600,
-    paymentType: 'debit',
-  },
+  //     basketOrder: [
+  //       {
+  //         name: 'VitaBison',
+  //         qty: 1,
+  //         sum: 100,
+  //         total: 100,
+  //         icon: 'https://raw.githubusercontent.com/ptbit/VitaBison/refs/heads/master/images/bank-tel.png',
+  //         unit: 'pcs',
+  //         code: 'VitaBison-1',
+  //         header: 'VitaBison header',
+  //         footer: 'VitaBison footer',
+  //       },
+  //     ],
+  //   },
+  //   validity: 3600,
+  //   paymentType: 'debit',
+  // },
 ];
 const form = document.getElementById('form');
 

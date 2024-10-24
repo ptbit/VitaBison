@@ -55,9 +55,9 @@ if (isset($data['status']) && $data['status'] === 'success') {
       $orderData = [
         "order" => [
           "line_items" => [
-            ["title" => "VitaBisonXL", "variant_id" => 41879531094121, "price" => 42.50, "quantity" => 3],
-            ["title" => "VitaBisonXL", "variant_id" => 41879531094121, "price" => 42.50, "quantity" => 2],
-            ["title" => "NeuroVitaXL", "variant_id" => 41879531323497, "price" => 42.50, "quantity" => 1]
+            ["title" => "VitaBisonXL", "variant_id" => 41879531094121, "price" => 44, "quantity" => 3],
+            ["title" => "VitaBisonXL", "variant_id" => 41879531094121, "price" => 44, "quantity" => 2],
+            ["title" => "NeuroVitaXL", "variant_id" => 41879531323497, "price" => 44, "quantity" => 1]
           ],
           "transactions" => [["kind" => "sale", "status" => "success", "amount" => $finalAmount]],
           "total_tax" => 0.00,
@@ -82,9 +82,9 @@ if (isset($data['status']) && $data['status'] === 'success') {
       $orderData = [
         "order" => [
           "line_items" => [
-            ["title" => "VitaBisonL", "variant_id" => 41884283764841, "price" => 48.60, "quantity" => 2],
-            ["title" => "VitaBisonL", "variant_id" => 41884283764841, "price" => 48.60, "quantity" => 2],
-            ["title" => "VitaBoostL", "variant_id" => 41879531454569, "price" => 48.60, "quantity" => 1]
+            ["title" => "VitaBisonL", "variant_id" => 41884283764841, "price" => 51, "quantity" => 2],
+            ["title" => "VitaBisonL", "variant_id" => 41884283764841, "price" => 51, "quantity" => 2],
+            ["title" => "VitaBoostL", "variant_id" => 41879531454569, "price" => 51, "quantity" => 1]
           ],
           "transactions" => [["kind" => "sale", "status" => "success", "amount" => $finalAmount]],
           "total_tax" => 0.00,
@@ -109,9 +109,9 @@ if (isset($data['status']) && $data['status'] === 'success') {
       $orderData = [
         "order" => [
           "line_items" => [
-            ["title" => "VitaBisonM", "variant_id" => 41884282978409, "price" => 57.50, "quantity" => 2],
-            ["title" => "VitaBoostM", "variant_id" => 41884283895913, "price" => 57.50, "quantity" => 1],
-            ["title" => "NeuroVitaM", "variant_id" => 41884283994217, "price" => 57.50, "quantity" => 1]
+            ["title" => "VitaBisonM", "variant_id" => 41884282978409, "price" => 60, "quantity" => 2],
+            ["title" => "VitaBoostM", "variant_id" => 41884283895913, "price" => 60, "quantity" => 1],
+            ["title" => "NeuroVitaM", "variant_id" => 41884283994217, "price" => 60, "quantity" => 1]
           ],
           "transactions" => [["kind" => "sale", "status" => "success", "amount" => $finalAmount]],
           "total_tax" => 0.00,
